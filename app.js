@@ -18,6 +18,17 @@ models.forEach(function (model) {
 var app = express();
 
 app.use(express.static(__dirname + '/public/public'));
+
+app.route('/*')
+    .get((req, res) => {
+        res.sendFile(__dirname+'/'+'/public/public/index.html');
+    });
+
+app.route('/:url(api|auth|components|app|bower_components|assets)/*')
+    .get((req, res) => {
+        res.sendFile(__dirname+'/'+'/public/public/index.html');
+});
+    
 // app.get('/', function (req, res) {
 //   res.send('Hello World!');
 // });

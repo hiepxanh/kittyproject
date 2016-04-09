@@ -5,23 +5,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- CSS Libs -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300,300italic,100&subset=latin,latin-ext,vietnamese" rel="stylesheet" type="text/css">
-		<!-- JS Libs -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- JS #self -->
-				<script src='/core.js'></script>
-				<script src='/scrollSpy.js'></script>
-		<!-- CSS #self -->
-		<link rel="stylesheet" type="text/css" href='/style.css'>
-		<link rel="stylesheet" type="text/css" href='/fadeIn.css'>
+		<link rel="stylesheet" href="./index_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="./index_files/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<link rel="stylesheet" href="./index_files/font-awesome.min.css">
+		<link href="./index_files/css" rel="stylesheet" type="text/css">
 
+		<!-- CSS #self -->
+		<link rel="stylesheet" type="text/css" href="./index_files/style.css">
+		<link rel="stylesheet" type="text/css" href="./index_files/fadeIn.css">
+
+		<!-- JS Libs -->
+		<script src="./index_files/jquery.min.js"></script>
+		<script src="./index_files/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- JS #self -->
+		<script src="./index_files/core.js"></script>
+		<script src="./index_files/scrollSpy.js"></script>
 	<script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
 	<body>
-		<nav id="main_nav" class="navbar navbar-default navbar-fixed-top">
+		<nav id="main_nav" class="navbar navbar-default navbar-fixed-top ">
 			<nav class="navbar navbar-inverse navbar_secondary hidden-xs">
 				<div class="container">
 					<form class="navbar-form navbar-right" role="search">
@@ -30,9 +32,9 @@
 						</div>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/#">TIN TỨC</a></li>
-						<li><a href="/#">TUYỂN DỤNG</a></li>
-						<li><a href="/contact/">LIÊN HỆ</a></li>
+						<li><a href="http://localhost:8000/cms/course/3/#">TIN TỨC</a></li>
+						<li><a href="http://localhost:8000/cms/course/3/#">TUYỂN DỤNG</a></li>
+						<li><a href="http://localhost:8000/cms/contact/">LIÊN HỆ</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -45,42 +47,42 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/"><span class="brand_logo"><img src="./index_files/TechkidBrandColor.png" alt="TechKids"></span></a>
+					<a class="navbar-brand" href="http://localhost:8000/cms/"><span class="brand_logo"><img src="./index_files/TechkidBrandColor.png" alt="TechKids"></span></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Về chúng tôi <span class="visible-xs-inline-block caret"></span></a>
+							<a href="http://localhost:8000/cms/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Về chúng tôi <span class="visible-xs-inline-block caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/about/#about">Giới thiệu chung</a></li>
-								<li><a href="/about/#path">Sứ mệnh, tầm nhìn, giá trị cốt lõi</a></li>
+								<li><a href="http://localhost:8000/cms/about/#about">Giới thiệu chung</a></li>
+								<li><a href="http://localhost:8000/cms/about/#path">Sứ mệnh, tầm nhìn, giá trị cốt lõi</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="/courses/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Khóa học <span class="visible-xs-inline-block caret"></span></a>
+							<a href="http://localhost:8000/cms/courses/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Khóa học <span class="visible-xs-inline-block caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/course/1/">Lập trình iOS</a></li>
-								<li><a href="/course/2/">Lập trình Android</a></li>
-								<li><a href="/course/3/">Code for everyone</a></li>
-								<li><a href="/course/4/">Pronunciation for everyone</a></li>
+								<li><a href="http://localhost:8000/cms/course/1/">Lập trình iOS</a></li>
+								<li><a href="http://localhost:8000/cms/course/2/">Lập trình Android</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/">Code for everyone</a></li>
+								<li><a href="http://localhost:8000/cms/course/4/">Pronunciation for everyone</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cộng đồng <span class="visible-xs-inline-block caret"></span></a>
+							<a href="http://localhost:8000/cms/course/3/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cộng đồng <span class="visible-xs-inline-block caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/#">Techhub - Free 4th place for IT students</a></li>
-								<li><a href="/#">Học bổng cho 1000 lập trình viên tài năng</a></li>
-								<li><a href="/#">Sự kiện TechKids hàng tháng</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">Techhub - Free 4th place for IT students</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">Học bổng cho 1000 lập trình viên tài năng</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">Sự kiện TechKids hàng tháng</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Góc lập trình <span class="visible-xs-inline-block caret"></span></a>
+							<a href="http://localhost:8000/cms/course/3/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Góc lập trình <span class="visible-xs-inline-block caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/#">Tài liệu học lập trình</a></li>
-								<li><a href="/#">Kinh nghiệm lập trình</a></li>
-								<li><a href="/#">I'm a coder, I have no life</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">Tài liệu học lập trình</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">Kinh nghiệm lập trình</a></li>
+								<li><a href="http://localhost:8000/cms/course/3/#">I'm a coder, I have no life</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -91,9 +93,9 @@
 							</div>
 						</form>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="/#">TIN TỨC</a></li>
-							<li><a href="/#">TUYỂN DỤNG</a></li>
-							<li><a href="/#">LIÊN HỆ</a></li>
+							<li><a href="http://localhost:8000/cms/course/3/#">TIN TỨC</a></li>
+							<li><a href="http://localhost:8000/cms/course/3/#">TUYỂN DỤNG</a></li>
+							<li><a href="http://localhost:8000/cms/course/3/#">LIÊN HỆ</a></li>
 						</ul>
 					</div>
 
@@ -101,7 +103,7 @@
 			</div>
 		</nav>
 
-
+		
 <section id="page_title" class="page_title stars">
 	<div class="container">
 		<div class="row text-center animate_fade">
@@ -132,19 +134,19 @@
 				<h3 class="column_title">Giảng viên</h3>
 				<ul class="users_list">
 					<li>
-						<div class="user_thumbnail"><img src="./code for everyone_files/canh.jpg"></div>
+						<div class="user_thumbnail"><img src="./index_files/canh.jpg"></div>
 						<h5><a href="http://localhost:8000/cms/instructor/1/">Bùi Xuân Cảnh</a></h5>
 						<p>Project Manager FSoft</p>
 					</li>
 					<li>
-						<div class="user_thumbnail"><img src="./code for everyone_files/Lehoangtu-300x300.jpg"></div>
+						<div class="user_thumbnail"><img src="./index_files/Lehoangtu-300x300.jpg"></div>
 						<h5><a href="http://localhost:8000/cms/instructor/2/">Lê Hoàng Tú</a></h5>
 						<p>Project Manager FSoft</p>
 					</li>
 				</ul>
 			</aside>
 			<div class="col-md-9 fly_right_md">
-				<img class="title_image" src="./code for everyone_files/Proud-of-Techkids-cover.jpg">
+				<img class="title_image" src="./index_files/Proud-of-Techkids-cover.jpg">
 
 				<div class="wpb_column vc_column_container vc_col-sm-8">
 <div class="wpb_wrapper">
@@ -206,7 +208,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
-						<img class="footer_logo" src="./code for everyone_files/TechkidBrandGrey.png">
+						<img class="footer_logo" src="./index_files/TechkidBrandGrey.png">
 						<p class="socials_list">
 							<a href="skype:techkidsvn?chat" class="fa fa-skype"></a>
 							<a href="https://www.facebook.com/Techkids.Code.the.Change" class="fa fa-facebook-square"></a>
@@ -237,7 +239,7 @@
 				</div>
 			</div>
 		</footer>
-
+	
 
 
 </body></html>
