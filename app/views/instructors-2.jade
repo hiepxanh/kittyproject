@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin giảng viên
+          p.section_subtitle  CẢNH BÙI
+    section
+      .container
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .text-center
+              .profile_thumbnail
+                img(2015='', src='/cms/img/canh.jpg')
+            ul
+              li
+                em Số năm kinh nghiệm: 
+                | 7 năm
+              li
+                em Nơi sống: 
+                | Hà Nội
+          .col-sm-8
+            p Project manager tại FPT Software
+            p
+              | 6 năm kinh nghiệm là Project manager của Fsoft
+            p
+              | 6 năm là dự án cho công ty Top 10 smartphone/TV. Nhận được các chứng chỉ quốc tế như Scrum, PMI,…
+            p Chia sẻ của anh Tú về nghề Lập trình:
+            p
+              |Chia sẻ của anh Cảnh về sinh viên IT ở VN:
+              | “Giáo dục và môi trường Việt Nam khiến tư tưởng của các bạn sinh viên Việt Nam khá “ăn xổi”, cứ nghĩ mobile dev là ngon ăn rồi nhảy vào, tự học được vài chiêu rồi copy đoạn code này, paste vào, bán thi thoảng được vài nghìn đô đã là sung sướng. Hoặc có những bạn theo đuổi rất tử tế thì lại bị thiếu tầm nhìn, không biết cách hợp tác với người khác, nhìn ra đường hướng phát triển và Marketing sản phẩm,… Những điều này khiến các bạn ấy chỉ làm được những sản phẩm 1 là chộp giật chỉ bán được trong thị trường Việt Nam hoặc 2 là những sản phẩm chỉ dừng lại ở 1 mức nào đó mà không phát triển được tiếp. Nó thực sự không tốt trong dài hạn.
+              | Thế nên mình cho rằng điều đầu tiên khi mình giảng dạy Khóa Lập trình Android ở TechKids là giúp các bạn có suy nghĩ đúng đắn về Lập trình, biết nhìn xa hơn, biết cố gắng không ngừng nghỉ và tìm những cơ hội tốt ở một nơi còn hạn chế về đủ thứ như Việt Nam.
+              | Mình tin về kiến thức chuyên môn thì không khó để truyền đạt và giúp các bạn ấy tiến bộ tốt, ít nhất với kinh nghiệm của mình, nhưng mình đang hy vọng một điều gì đó lớn lao hơn qua các lớp học này.”
+
+            
+    section
+      .container.articles_list
+        h3.section_title.col-sm-5.col-xs-9 Các khóa học của CẢNH BÙI
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/courses/3')
+                img(src='/cms/img/android.png')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/courses/3') android
+            div
+              //- p
+              //-   | “Tất cả mọi người nên học Lập trình, bởi Lập trình dạy bạn cách tư duy” – Steve Jobs.
+              //- p
+              //-   | Nếu bạn coi máy tính và internet là một phần cuộc sống của mình, thì TechKids tin học Lập trình là học cách làm cuộc sống của bạn tốt đẹp hơn: Hiệu quả hơn, tiết kiệm thời gian, công sức, tiền bạc và thú vị hơn rất nhiều!
+              //- p
+              //-   | Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu, để Việt Nam bắt kịp với các nước trên thế giới nhanh hơn.
+              //- p
+              //-   | Vậy nên, TechKids tiên phong khởi động chương trình “CODE FOR EVERYONE” để giúp tất cả người Việt có cơ hội học Lập trình một cách dễ dàng, thân thiện, khác biệt và hiệu quả.
+            a.see_more_link(href='/courses/3')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+        hr.content_divider
+        
+             

@@ -1,0 +1,78 @@
+extends layout
+
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin giảng viên
+          p.section_subtitle Tú Lê
+    section
+      .container
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .text-center
+              .profile_thumbnail
+                img(2015='', src='/cms/img/Lehoangtu.jpg')
+            ul
+              li
+                em Số năm kinh nghiệm: 
+                | 8 năm
+              li
+                em Nơi sống: 
+                | Hà Nội
+          .col-sm-8
+            p Project manager tại FPT Software
+            p
+              | 8 năm kinh nghiệm lập trình Android tại FPT Software, hiện tại đang là project manager.
+            p
+              | 6 năm kinh nghiệm làm dự án Android với khách hàng là các Startup tại Mỹ. Trong đó có hệ thống social network trong ngành Healthcare.
+            p Chia sẻ của anh Tú về nghề Lập trình:
+            p
+              | “Mình chỉ khuyên các bạn nên xem video này: 
+              a(href='https://www.youtube.com/watch?v=nKIu9yen5nc', target='_blank') https://www.youtube.com/watch?v=nKIu9yen5nc
+            p
+              | Là một Lập trình viên, các bạn cần hiểu được sức mạnh của mình và giá trị to lớn mà các bạn tạo ra cho xã hội. Bây giờ hầu hết các dự án cộng đồng hay ngành về phúc lợi xã hội ở các nước phát triển đều nhờ đến Công Nghệ đặc biệt là Giáo dục, Y tế,… Thu nhập sẽ là một thứ đi theo sau nhưng gì các bạn tạo ra.
+            p
+              | Thế nên khi giảng dạy tại TechKids, mình rất mong đem đến cái nhìn rộng mở hơn cho các bạn sinh viên Việt Nam, không chỉ câu chuyện về cơ hội thu nhập, mà còn lại việc các bạn có thể góp phần giúp Việt Nam, giúp thế giới này trở nên tốt đẹp hơn như thế nào.”
+    section
+      .container.articles_list
+        h3.section_title.col-sm-5.col-xs-9 Các khóa học của TÚ LÊ
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/courses/1')
+                img(src='/cms/img/c4e.jpg')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/courses/1') Code for everyone
+            div
+              p
+                | “Tất cả mọi người nên học Lập trình, bởi Lập trình dạy bạn cách tư duy” – Steve Jobs.
+              p
+                | Nếu bạn coi máy tính và internet là một phần cuộc sống của mình, thì TechKids tin học Lập trình là học cách làm cuộc sống của bạn tốt đẹp hơn: Hiệu quả hơn, tiết kiệm thời gian, công sức, tiền bạc và thú vị hơn rất nhiều!
+              p
+                | Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu, để Việt Nam bắt kịp với các nước trên thế giới nhanh hơn.
+              p
+                | Vậy nên, TechKids tiên phong khởi động chương trình “CODE FOR EVERYONE” để giúp tất cả người Việt có cơ hội học Lập trình một cách dễ dàng, thân thiện, khác biệt và hiệu quả.
+            a.see_more_link(href='/courses/1')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/courses/2')
+                img(src='/cms/img/ios.jpg')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/courses/2') Khoá học Lập trình iOS
+            div
+              p
+                | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+              p Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+              p Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+            a.see_more_link(href='/courses/2')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+             

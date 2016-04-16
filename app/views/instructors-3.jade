@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin giảng viên
+          p.section_subtitle TÚ ĐỖ
+    section
+      .container
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .text-center
+              .profile_thumbnail
+                img(2015='', src='/cms/img/doanhtu.jpg')
+            ul
+              li
+                em Số năm kinh nghiệm: 
+                | 4 năm
+              li
+                em Nơi sống: 
+                | Hà Nội
+          .col-sm-8
+            p Project manager tại FPT Software
+            p
+              | Co-founder Haivl.com
+              |Co-founder Haivl.com. Tác giả app 2048 (5×5) với 3 triệu users và nhiều game thành công khác
+              | Chia sẻ của anh Tú về Lập trình game:
+              | “Nghề lập trình game tại Việt Nam còn khá mới mẻ so với các nhóm ngành CNTT truyền thống khác. Chính vì thế, những hình dung về công việc của người làm game còn khá mơ hồ và thiếu chính xác. Có người còn cho rằng để phát triển một game, chỉ cần bộ phần developer là đủ, tuy nhiên, thực tế tại các công ty phát triển game, một team gồm có:
+              | Developer: Viết code logic game, gắn kết các thành phần resource theo đúng thiết kế game
+              | Artist: Vẽ nhân vật, bối cảnh, giao diện, hiệu ứng…
+              | Game designer: Thiết kế cốt truyện và nội dung game, cân bằng thông số, thiết kế giao diện…;
+              | Tester: Chơi game, kiểm tra lỗi, cảm nhận và đánh giá game;
+              | Như vậy có nghĩa là một sản phẩm game trước khi đưa ra thị trường cần trải qua rất nhiều công đoạn và sự góp sức của nhiều người. Chỉ dev không làm nên mùa xuân và bản thân một Lập trình viên cần thêm rất nhiều kỹ năng để có một sản phẩm tốt: từ hiểu biết về design cơ bản, cách làm việc với người khác, hiểu khách hàng,…
+              | Hiện tại ở Việt Nam, riêng đối với Lập trình di dộng thì lập trình game vẫn chiếm tỉ lệ lớn nhất. Lập trình viên làm game không thiếu nhưng để có một Lập trình viên đẳng cấp không phải dễ, đặc biệt người có thể tạo ra những sản phẩm cho thị trường khó tính như Nhật, UK, US, EU,… Ví dụ như thị trường US người ta rất sẵn sàng chi tiền cho cái mới, nhưng chỉ game nào thực sự chất lượng mới sống được.
+              | Mình làm Lập trình iOS một thời gian nên hiểu nhu cầu về nhân sự trong mảng này lớn như thế nào, công ty nào cũng thiểu người nhưng phải cực kỳ chật vật để tìm được một Lập trình viên ưng ý. Mở rộng ra tất cả các lĩnh vực khác của CNTT cũng gặp tình trạng tương tự. Đó cũng là lý do mình mong muốn tham gia xây dựng và giúp đỡ các bạn học viên của TechKids vì ở đây đào tạo rất toàn diện, không chỉ là kiến thức chuyên môn, mà còn là kỹ năng mềm, tiếng Anh, tinh thần làm việc nhóm. Qua đây, mình hy vọng có thể truyền kinh nghiệm và niềm đam mê của mình một cách gần gũi nhất tới các bạn trẻ.”
+    section
+      .container.articles_list
+        h3.section_title.col-sm-5.col-xs-9 Các khóa học của TÚ LÊ
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/courses/2')
+                img(src='/cms/img/ios.jpg')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/courses/2') Khoá học Lập trình iOS
+            div
+              p
+                | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+              p Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+              p Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+            a.see_more_link(href='/courses/2')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+             

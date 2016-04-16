@@ -2,7 +2,13 @@ var gulp = require('gulp'),
   nodemon = require('gulp-nodemon'),
   plumber = require('gulp-plumber'),
   livereload = require('gulp-livereload'),
-  less = require('gulp-less');
+  less = require('gulp-less'),
+  ts = require('gulp-typescript'),
+  gutil = require('gulp-util');
+
+gulp.task('default', function() {
+  return gutil.log('Gulp dep trai is running!')
+});
 
 gulp.task('less', function () {
   gulp.src('./public/css/*.less')
@@ -32,6 +38,8 @@ gulp.task('develop', function () {
     this.stderr.pipe(process.stderr);
   });
 });
+
+
 
 gulp.task('default', [
   'less',

@@ -1,13 +1,174 @@
 doctype html
-html(lang='en')
+html
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width')
-    title= title
-    block css
-      link(rel='stylesheet', href='/css/style.css')
-    block js
-      if ENV_DEVELOPMENT
-        script(src='http://localhost:35729/livereload.js')
+    title
+      |TechKids - Cộng đồng lập trình viên chất lượng cao
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    block styles
+      // CSS Libs
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+      link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,vietnamese', rel='stylesheet', type='text/css')
+      // CSS #self
+      link(rel='stylesheet', type='text/css', href='cms/css/style.css')
+      link(rel='stylesheet', type='text/css', href='cms/css/fadeIn.css')
+    block scripts
+      // JS Libs
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+      // JS #self
+      script(src='cms/js/core.js')
+      script(src='cms/js/scrollSpy.js')
+      script(src='cms/js/fixbug.js')
+      script.
+        //window.alert(5 + 6);
+        console.log(5 + 6);
+        (function() {
+        var cx = '013092066718750696189:ueq_sgaxhj0';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        })();
+
+
+
   body
-    block content
+    
+    nav#main_nav.navbar.navbar-default.navbar-fixed-top.block.nav_optional.endblock(class='{% %}{% %}')
+      nav.navbar.navbar-inverse.navbar_secondary.hidden-xs
+        .container
+          //form.navbar-form.navbar-right(role='search')
+            //.form-group
+              //- input.form-control(type='text', placeholder='Search')
+              //- input.form-control(type='button',value="Seach")
+          //- div.col-md-3
+          //-   gcse:search
+          //- form(method='get', action='http://www.google.com/search')
+          //-   div(style='border:1px solid black;padding:4px;width:20em;')
+          //-     table(border='0', cellpadding='0')
+          //-       tr
+          //-         td
+          //-           input(type='text', name='q', size='25', maxlength='255', value='')
+          //-           input(type='submit', value='Google Search')
+          //-       tr
+          //-         td(align='center', style='font-size:75%')
+          //-           input(type='checkbox', name='sitesearch', value='askdavetaylor.com', checked='')
+          //-           |  only search Ask Dave Taylor
+          //-           br
+          //- form(action='http://www.google.com/search', method='get')
+          //-   label
+          //-     | Google: 
+          //-     input(type='search', name='q')
+          //-   input(type='submit', value='Search...')
+          ul.nav.navbar-nav.navbar-right
+            //- li
+            //-   a(href='#') TIN TỨC
+            //- li
+            //-   a(href='#') TUYỂN DỤNG
+            li
+              a(href="/") TRANG CHỦ
+            li
+              a(href="/contact") LIÊN HỆ
+            li
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="/")
+            span.brand_logo
+              img(src='/cms/img/TechkidBrandColor.png', alt='TechKids')
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.dropdown
+              a.dropdown-toggle(href="/about-us", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Về chúng tôi
+                span.visible-xs-inline-block.caret
+              ul.dropdown-menu
+                li
+                  a(href="/about-us#about") Giới thiệu chung
+                li
+                  a(href="about-us#path") Sứ mệnh, tầm nhìn, giá trị cốt lõi
+            li.dropdown
+              a.dropdown-toggle(href="/courses", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Khóa học
+                span.visible-xs-inline-block.caret
+              ul.dropdown-menu
+                li
+                  a(href="/courses/1") Code For Everyone
+                li
+                  a(href="/courses/2") Lập Trình IOS
+                li
+                  a(href="/courses/3") Lập Trình Android
+                //- li
+                //-   a(href="/courses/4") Pronunciation For Everyone
+            li.dropdown
+              a.dropdown-toggle(href='/events', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Sự kiện
+                span.visible-xs-inline-block.caret
+              //- ul.dropdown-menu
+              //-   li
+              //-     a(href='#') Techhub - Free 4th place for IT students
+              //-   li
+              //-     a(href='#') Học bổng cho 1000 lập trình viên tài năng
+              //-   li
+              //-     a(href='#') Sự kiện TechKids hàng tháng
+            li.dropdown
+              a.dropdown-toggle(href='/articles', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Góc lập trình
+                span.visible-xs-inline-block.caret
+              //- ul.dropdown-menu
+              //-   li
+              //-     a(href='#') Tài liệu học lập trình
+              //-   li
+              //-     a(href='#') Kinh nghiệm lập trình
+              //-   li
+              //-     a(href='#') I'm a coder, I have no life
+          .visible-xs-block
+            form.navbar-form.navbar-right.visible-xs-block(role='search')
+              .form-group
+                input.form-control(type='text', placeholder='Search')
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#') TIN TỨC
+              li
+                a(href='#') TUYỂN DỤNG
+              li
+                a(href='#') LIÊN HỆ
+    div(id="bug")
+      block content
+    footer.footer
+      .container
+        .row
+          .col-sm-3
+            img.footer_logo(src='/cms/img/TechkidBrandGrey.png')
+            p.socials_list
+              a.fa.fa-skype(href='skype:techkidsvn?chat')
+              a.fa.fa-facebook-square(href='https://www.facebook.com/Techkids.Code.the.Change')
+              a.fa.fa-google-plus-square(href='http://techkids.edu.vn/')
+          .col-sm-3
+            h5 Về TechKids
+            p
+              | TechKids là một cộng đồng toàn cầu của những người sẵn sàng trở thành những người giỏi nhất, khác biệt nhất trong thế giới Công nghệ.
+            p
+              | Ở đó chúng tôi cùng nhau tìm định hướng, học hỏi hết mình, khơi dậy những ước mơ, cố gắng không ngừng và đồng hành với nhau trên hành trình chinh phục Công nghệ cao để thay đổi thế giới!
+          .col-sm-3
+            h5 Tìm TechKids tại
+            ul
+              li TechHub Chùa Láng: Số 10, ngõ 121, Chùa Láng
+              li TechHub Chùa Bộc: Số 101D, ngõ 95, Chùa Bộc
+            p Hotline: Ms. Ha: 0165 300 5670
+          .col-sm-3
+            h5 TechKids event
+            //- a(href='#') Talkshow: Lập trình di động
+
+            
