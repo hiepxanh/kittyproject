@@ -1,0 +1,62 @@
+extends layout
+block content
+  section#page_title.page_title.stars
+    .container
+      .row.fade_up.text-center
+        h3.section_title.col-sm-5.col-xs-9 GÓC LẬP TRÌNH
+        p.section_subtitle Kiến thức đến từ sự chia sẻ
+  section
+    .container.articles_list
+      hr.content_divider
+      article.row
+        .col-sm-4
+          .news_thumbnail.fade_scale
+            a(href='/articles/1')
+              img(src='cms/img/chiasesach.jpg')
+        .col-sm-8.fade_left
+          h3.column_title
+            a(href='/articles/1') Chia sẻ sách cho dân Lập trình viên
+          div
+            | Chào các bạn
+            | TechKids xin gửi tới các bạn những quyển ebook  khá hữu dụng để bạn có thể học một số kỹ năng cần thiết nhé.
+            | Download TẠI ĐÂY.
+            | P/s: Có rất nhiều bạn lo ngại rằng tiếng Anh không đủ để đọc những cuốn sách bằng tiếng Anh, nếu biết vậy, thì học tiếng Anh đi. Học Lập trình mà không biết tiếng Anh (ít nhất là đọc hiểu) thì tù lắm. Chính vì vậy, trong tất cả các chương trình học Lập trình của TechKids, chúng mình đều bắt buộc tất cả học viên học tiếng Anh (miễn phí) trong 1-2 tháng đầu tiên để có kiến thức cơ bản và phương pháp tự học.
+              
+          a.see_more_link(href='/articles/1')
+            | Chi tiết 
+            span.fa.fa-chevron-right(aria-hidden='true')
+      hr.content_divider
+      //- article.row
+      //-   .col-sm-4
+      //-     .news_thumbnail.fade_scale
+      //-       a(href='/courses/2')
+      //-         img(src='cms/img/ios.jpg')
+      //-   .col-sm-8.fade_left
+      //-     h3.column_title
+      //-       a(href='/courses/2') Khoá học Lập trình iOS
+      //-     div
+      //-       p
+      //-         | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+      //-       p Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+      //-       p Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+      //-     a.see_more_link(href='/courses/2')
+      //-       | Chi tiết 
+      //-       span.fa.fa-chevron-right(aria-hidden='true')
+      //- hr.content_divider
+      //- article.row
+      //-   .col-sm-4
+      //-     .news_thumbnail.fade_scale
+      //-       a(href='/courses/3')
+      //-         img(src='cms/img/android.png')
+      //-   .col-sm-8.fade_left
+      //-     h3.column_title
+      //-       a(href='/courses/3') Khoá học Lập trình Android
+      //-     div
+      //-       p
+      //-         | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+      //-       p Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+      //-       p Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+      //-     a.see_more_link(href='/courses/3')
+      //-       | Chi tiết 
+      //-       span.fa.fa-chevron-right(aria-hidden='true')
+      //- hr.content_divider

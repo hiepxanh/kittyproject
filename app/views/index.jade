@@ -1,0 +1,198 @@
+extends layout
+
+block content
+  section#intro.intro.stars
+      .container.center_inline_list
+        img.fade_up(src='/cms/img/TechKidsLogo.png', alt='TechKids')
+    section#about.about_us
+      .container
+        .fade_up
+          .row.text-center
+            h3.section_title.col-sm-5.col-xs-9 VỀ CHÚNG TÔI
+          .row
+            .text-center.col-sm-10.col-sm-offset-1.col-xs-12
+              | TechKids là một cộng đồng toàn cầu của những người sẵn sàng trở thành những người giỏi nhất, khác biệt nhất trong thế giới Công nghệ. Ở đó, chúng tôi cùng nhau tìm định hướng, học hỏi hết mình, khơi dậy những ước mơ, cố gắng không ngừng và đồng hành với nhau trên hành trình chinh phục Công nghệ cao để thay đổi thế giới!
+        .row
+          .col-sm-10.col-sm-offset-1.about_values
+            .core_value
+              .frame_wrapper.fade_up
+                img(src='/cms/img/giatricotloi.png')
+                h5 Giá trị cốt lõi
+                p
+                  | Nỗ lực để trở nên xuất sắc. Sẻ chia để làm những điều tuyệt vời hơn. Luôn giữ kết nối với Cộng đồng Kinh doanh – Kinh tế bới Công Nghệ thuần túy là không đủ.
+                .text-center
+                  a.btn.btn-primary(href="/about-us") TÌM HIỂU THÊM
+            .vision
+              .frame_wrapper.fade_left
+                img(2015='', src='/cms/img/tamnhin.png')
+                h5 Tầm nhìn
+                p
+                  | Trở thành một trong các tổ chức giáo dục lớn nhất ở Việt Nam và ASEAN trong lĩnh vực công nghệ, cung cấp cho cộng đồng những trải nghiệm giáo dục tốt nhất trong khu vực.
+            .destiny
+              .frame_wrapper.fade_right
+                img(2015='', src='/cms/img/sumenh.png')
+                h5 Sứ mệnh
+                p
+                  | Chúng tôi tạo ra và kết nối thế hệ những Lập trình viên trẻ tài năng, nhiệt huyết, cùng họ mang đến một thế giới tốt đẹp hơn bằng sức mạnh của Công nghệ hiện đại.
+    section#partners.partners
+      .container
+        .row.text-center.fade_up
+          hr.content_divider
+          h3.col-sm-12
+            | TechKids tự hào là đối tác chính thức của các tập đoàn hàng đầu Việt Nam và ASEAN
+        .row
+          ul.partners_list.center_inline_list.col-sm-12
+            li
+              a(href='https://topica.edu.vn/')
+                img.fade_scale(src='/cms/img/PartnersLogo/Topica.png', alt='Topica')
+            li
+              a(href='https://www.samsung.com/vn/home/')
+                img.fade_scale(src='/cms/img/PartnersLogo/Samsung.png', alt='Samsung')
+            li
+              a(href='http://bkav.com.vn')
+                img.fade_scale(src='/cms/img/PartnersLogo/BKAV.png', alt='BKAV')
+            li
+              a(href='http://tinhvan.vn/')
+                img.fade_scale(src='/cms/img/PartnersLogo/TinhVan.png', alt='TinhVan')
+            li
+              a(href='http://viettel.com.vn/')
+                img.fade_scale(src='/cms/img/PartnersLogo/Viettel.png', alt='Viettel')
+            li
+              a(href='https://www.fpt.com.vn/')
+                img.fade_scale(src='/cms/img/PartnersLogo/Fpt.png', alt='FPT')
+    section#courses.courses
+      .container
+        .row
+          .col-sm-4.course_item.fade_scale
+            div
+              span.course_icon
+                img(src='/cms/img/icon1.png')
+            h4 CODE FOR EVERYONE
+            p
+            | Nếu bạn coi máy tính và internet là một phần cuộc sống của mình, thì TechKids tin học Lập trình là học cách làm cuộc sống của bạn tốt đẹp hơn: Hiệu quả hơn, tiết kiệm thời gian, công sức, tiền bạc và thú vị hơn rất nhiều!
+
+          //- .col-sm-3.course_item.fade_scale.fade_delay_1
+          //-   div
+          //-     span.course_icon
+          //-       img(src='http://demo.themeisle.com/zerif-pro/wp-content/uploads/sites/53/2014/07/Unknown-9.png')
+          //-   h4 CODING INTENSIVE
+          //-   p
+          //-   | Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu.
+
+          .col-sm-4.course_item.fade_scale.fade_delay_2
+            div
+              span.course_icon
+                img(src='/cms/img/icon2.png')
+            h4 IOS
+            p
+              | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+          .col-sm-4.course_item.fade_scale.fade_delay_3
+            div
+              span.course_icon
+                img(src='/cms/img/icon3.png')
+            h4 ANDROID
+            p
+              | Khoá học Lập trình di động (Android) của Techkids là khoá học 4 tháng giúp học viên có thể tự tin đi làm cho các doanh nghiệp lớn hoặc tự làm sản phẩm của mình để bán trên Googleplay.
+        .row
+          .col-xs-12.text-center
+            //a.btn.btn-primary(href="/portfolio") Sản phẩm học viên
+        hr.content_divider
+        .row
+          .col-sm-12.fade_up
+            blockquote
+              p
+                | "Chúng tôi tin các bạn, nếu được truyền cảm hứng nhiều hơn, trau dồi nhiều hơn, đam mê và nỗ lực nhiều hơn thì các bạn sẽ làm được những điều thật sự khác biệt! Và chúng tôi hứa, sẽ đồng hành với bạn trong cuộc hành trình đầy thử thách này."
+              footer Nguyễn Thanh Tùng, Co-founder TechKids
+    section#teachers.stars.teachers
+      .container
+        .row.fade_up
+          h3.section_title.col-sm-5.col-xs-9 GIẢNG VIÊN
+        .row
+          .col-sm-12
+            ul.teachers_list.center_inline_list
+              li.fade_scale
+                img(2015='', src='/cms/img/Lehoangtu.jpg')
+                h5
+                  a(href="/instructors/1") Lê Hoàng Tú
+                p Project manager at FPT Software
+              li.fade_scale
+                img(2015='', src='/cms/img/canh.jpg')
+                h5
+                  a(href="/instructors/2") Bùi Xuân Cảnh
+                p Project manager at FPT Software
+              li.fade_scale
+                img(2015='', src='/cms/img/doanhtu.jpg')
+                h5
+                  a(href="/instructors/3") Đỗ Anh Tú
+                p Co-founder Haivl.com
+              li.fade_scale
+                img(2015='', src='/cms/img/dat.jpg')
+                h5
+                  a(href="/instructors/4") Nguyễn Tiến Đạt
+                p Director at PlumGame
+              //- li.fade_scale
+              //-   img(2015='', src='cms/img/quynh.jpg')
+              //-   h5
+              //-     a(href="instructors/5") Cao Minh Quỳnh
+              //-   p Project Manager at Viettel
+    //- section#news.newsevent
+    //-   .container
+    //-     .row.text-center.fade_up
+    //-       h3.section_title.col-sm-5.col-xs-9 TIN TỨC & SỰ KIỆN
+    //-   .container.articles_list
+    //-     article.row
+    //-       .col-sm-4
+    //-         .news_thumbnail.fade_scale
+    //-           img(2016='', src='{% static ', cms='', img='', uploads='', 01='')
+    //-       .col-sm-8.fade_left
+    //-         h3.column_title
+    //-           a(href='#') Chia sẻ sách cho dân Lập trình viên
+    //-         div
+    //-           p Chào các bạn
+    //-           p
+    //-             | TechKids xin gửi tới các bạn những quyển ebook  khá hữu dụng để bạn có thể học một số kỹ năng cần thiết nhé.
+    //-           p Download TẠI ĐÂY.
+    //-           p
+    //-             | P/s: Có rất nhiều bạn lo ngại rằng tiếng Anh không đủ để đọc những cuốn sách bằng tiếng Anh, nếu biết vậy, thì học […]!
+    //-         a.see_more_link(href='#')
+    //-           | Chi tiết 
+    //-           span.fa.fa-chevron-right(aria-hidden='true')
+    //-     hr.content_divider
+    //-     article.row
+    //-       .col-sm-4
+    //-         .news_thumbnail.fade_scale
+    //-           img(2016='', src='{% static ', cms='', img='', uploads='', 01='')
+    //-       .col-sm-8.fade_left
+    //-         h3.column_title
+    //-           a(href='#') Talkshow: English and IT
+    //-         div
+    //-           p
+    //-             | English and IT - Why, How, What? "English and IT - Why, How, What" là sự kiện được tổ chức bởi câu lạc bộ Tiếng Anh ILEC, trực thuộc Ban Chấp hành Liên Chi Đoàn Viện Cơ Khí - Đại học Bách Khoa Hà Nội. Đây là cơ hội dành cho tất cả các bạn [...]
+    //-         a.see_more_link(href='#')
+    //-           | Chi tiết 
+    //-           span.fa.fa-chevron-right(aria-hidden='true')
+    //-     hr.content_divider
+    //-     article.row
+    //-       .col-sm-4
+    //-         .news_thumbnail.fade_scale
+    //-           img(12='', 2015='', src='{% static ', cms='', img='', uploads='')
+    //-       .col-sm-8.fade_left
+    //-         h3.column_title
+    //-           a(href='#') How To Become A Customer Acquisition Expert
+    //-         div
+    //-           p
+    //-             | Trích từ bài viết của Brian Balfour – Một Growth Leader, Entrepreneur, & Angel Investor
+    //-           p If I Can Do It, You Can Do It
+    //-           p
+    //-             | I started my career out as a “product guy.”  But about 4 years ago I realized that product was a small piece of the startup puzzle.  I became fascinated with how products were […]
+    //-         a.see_more_link(href='#')
+    //-           | Chi tiết 
+    //-           span.fa.fa-chevron-right(aria-hidden='true')
+    section#join_us.join_us.stars
+      .container.fade_up
+        .row.text-center
+          h3.section_title.col-sm-5.col-xs-9 TRẢI NGHIỆM CÙNG TECHKIDS
+          p.section_subtitle Cùng viết nên những dòng code thay đổi cuộc đời bạn
+        .row.text-center
+          a.btn.btn-primary.col-sm-3.col-xs-9(href='/courses') KHÓA HỌC
+          a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/events') SỰ KIỆN

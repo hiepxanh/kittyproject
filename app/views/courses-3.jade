@@ -1,0 +1,308 @@
+extends layout
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin
+          p.section_subtitle Khóa học lập trình Android
+    section
+      .container
+        hr.content_divider
+        article.row
+          aside.course_summary.fly_right_md.col-md-3
+            h3.column_title Tóm lược
+            p
+              | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+            p
+              i.fa.fa-calendar
+              em Lịch khai giảng
+              span.pull-right 01/5/2015
+            hr.sub_divider
+            p
+              i.fa.fa-clock-o
+              em Thời gian học
+              div Tối thứ 4,7 (7h30-9h30) Học nhóm & thực hành: tối Chủ nhật (7h30-9h30)
+            hr.sub_divider
+            p
+              i.fa.fa-level-up
+              em Thời lượng học
+              div 5 tháng. 3 buổi học chính/tuần
+            hr.sub_divider
+            p
+              i.fa.fa-credit-card
+              em 5 Học bổng tài năng
+              span.pull-right 50-100%
+            p.price_tag
+              | 5.500.000
+              sup đ
+            //a.btn.btn-primary.btn-block(href='http://techkids.edu.vn/index.php/dang-ki-event/') Đăng ký tại đây
+            hr
+            h3.column_title Giảng viên
+            ul.users_list
+              li
+                .user_thumbnail
+                  a(href="/instructors/2")  
+                    img(src="/cms/img/canh.jpg")
+                h5
+                  a(href="/instructors/2") Bùi Xuân Cảnh
+                p Project Manager FSoft
+              li
+                .user_thumbnail
+                  a(href="/instructors/1")
+                    img(src="/cms/img/lehoangtu.jpg")
+                h5
+                  a(href="/instructors/1") Lê Hoàng Tú
+                p Project Manager FSoft
+          .col-md-9.fly_right_md
+            img.title_image(src="/cms/img/android.png")
+            section
+              .article_title_wrapper.row
+                h3.section_title.col-sm-5.col-xs-9 Thông tin khóa học
+              h2(style='text-align: center;')
+                strong
+                  span(style='color: #555555;') 1. Tại sao bạn nên học ở TechKids
+              p(style='text-align: center;')
+                strong
+                  span(style='color: #ff0000;')
+                    | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+              p
+                strong MỤC ĐÍCH KHÓA HỌC:
+              p
+                span(style='font-weight: 400;')             Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+              p
+                span(style='font-weight: 400;')             Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+              p  
+              p
+                span(style='font-weight: 400;')
+                  strong THỜI GIAN RÈN LUYỆN:
+                  |  5 tháng
+              p
+                span(style='font-weight: 400;')
+                  | 1 tháng đầu: học Tiếng Anh (Miễn phí). Có thể tự làm được 1 game hoàn chỉnh. Sử dụng được tiếp Anh giao tiếp cơ bản.
+              p
+                span(style='font-weight: 400;')
+                  | 2 tháng tiếp theo: 2 tuần đầu: học kiến thức Lập trình kèm theo assignment. Đến tuần thứ 3: Vừa học vừa làm 1 dự án giả lập hoàn chỉnh.
+              p
+                span(style='font-weight: 400;')
+                  | 2 tháng cuối cùng: Làm dự án THẬT của 1 công ty đối tác dưới sự hướng dẫn của Giảng viên và trợ giảng.
+              p
+                span(style='font-weight: 400;')
+                  | Kết thúc khóa: Có thể làm sản phẩm thật hoàn chỉnh và có công việc (không kể tuổi tác) hoặc kiếm được thu nhập riêng.
+              p  
+              p
+                strong MỘT SỐ ĐIỂM LƯU Ý:
+              p
+                span(style='font-weight: 400;')
+                  strong             TechKids có hơn 30 đối tác
+                  |  là các công ty lớn trong nước và ở ASEAN, US (xin được giấu tên) sẽ gửi dự án cho TechKids và nhận học viên của TechKids (fulltime/parttime)
+              p
+                strong             TechKids hỗ trợ tất cả khoản ăn, ngủ, ở tại TechKids.
+              p
+                span(style='font-weight: 400;')
+                  strong             Học bổng
+                  |  cho những bạn có tiềm năng và thái độ tốt nhất. Gen 1 đã nhận được 1 Học bổng 100%, 3 50%, 3 30% và còn lại 1 số nhận được hỗ trợ 10-20%. Nôp CV/Resume và thư xin học bổng vào email 
+                  a(href='mailto:Techkids.vietnam@gmail.com') Techkidsvn@gmail.com
+                  |  hoặc điền 
+                  strong
+                    a(href='https://docs.google.com/forms/d/1jTAD88drU1KXhzINYQ8eMBZQmmWHGvHe68bXOmUOB-s/viewform?usp=send_form', target='_blank') ONLINE FORM
+                  | . Đọc thêm thông tin
+                  //- strong
+                  //-   a(href='http://techkids.edu.vn/index.php/hoc-bong-cho-lap-trinh-vien-tai-nang/', target='_blank')  TẠI ĐÂY
+                  //- | .
+              p Luôn có phần thưởng cho sự nỗ lực!
+              p
+                span(style='color: #555555;')
+                  b             Học kỹ năng cần thiết
+                span(style='font-weight: 400;')
+                  | cho 1 Lập trình viên, tất cả học viên sẽ được nhận được Học bổng 100% 5 khóa học khác: 1.Tiếng Anh giao tiếp, 3. Kĩ thuật design mobile apps,  4. Đào tạo về tuyển dụng, 5. Cách khởi nghiệp với Mobile app thành công .
+              p
+                span(style='color: #555555;')
+                  b             Tăng kỹ năng mềm
+                span(style='font-weight: 400;')
+                  | (Giao tiếp, làm việc nhóm, khởi nghiệp,…) bằng các hoạt động chung với Cộng đồng TQDN Vietnam 1200+ thành viên đến từ những trường Đh và công ty về Công nghệ – Kinh tế – Kinh doanh danh giá nhất trên thế giới: Harvard, Stanford, Oxford,…hay Unilever, Uber, Grabtaxi,….
+              p  
+              p
+                span(style='color: #555555;')
+                  strong BẠN CHỜ ĐỢI ĐIỀU GÌ TRƯỚC KHÓA HỌC:
+              p(style='padding-left: 60px;')
+                b Đội ngũ giảng viên và trợ giảng có trình độ quốc tế
+                span(style='font-weight: 400;')
+                  | , cùng với TechKids xây dựng một cộng đồng IT-ers trong khu vực ASEAN để đồng hành với từng cá nhân trong sự nghiệp sau này.
+              p(style='padding-left: 60px;')
+                span(style='color: #555555;')
+                  b Truyền cảm hứng và khuyến khích sự sáng tạo
+                  span(style='font-weight: 400;')
+                    | , chủ động, khác biệt của từng học viên trong môi trường cực kỳ năng động, cởi mở. Chúng tôi TỪ CHỐI KIỂU HỌC THỤ ĐỘNG, CẦM THAY CHỈ VIỆC. Giáo dục Việt Nam đã sai lầm quá đủ rồi!
+              p(style='padding-left: 60px;')
+                span(style='color: #555555;')
+                  b Chi phí cực kỳ thấp (chỉ bằng 1/2 thông thường)
+                  span(style='font-weight: 400;')
+                    span(style='font-weight: 400;')
+                      | : 5.000.000vnd/5 tháng học tập và làm việc tại TechHub. Mọi chi phí đóng góp của các bạn đủ để chúng tôi trả các chi phí vận hành và trao học bổng cho Học viên xuất sắc và những bạn có hoàn cảnh khó khăn.
+              p(style='padding-left: 60px;')
+                strong CHÚ Ý:
+                |  15 bạn đăng ký sớm nhất, thi đầu vào/phỏng vấn và nộp học phí trước 31/1/2016: nhận được 300.000vnd từ TechKids như một món quà trước khi về nghỉ Tết nhé!
+              p
+                span(style='color: #555555;')
+                  span(style='font-weight: 400;')
+                    br
+                  span(style='font-weight: 400;')
+                    | Đây không phải là một tổ chức dạy học bình thường, đây là một cộng đồng Lập trình viên chất lượng cao,
+                    strong  CHỈ NHẬN HỌC VIÊN CÓ TƯ DUY VÀ THÁI ĐỘ TỐT
+              hr
+              h2(style='text-align: center;')
+                span(style='color: #555555;')
+                  b
+                    b 2. Tại sao bạn nên học Lập trình iOS
+              p
+                b CƠ HỘI NGHỀ NGHIỆP CỰC TỐT
+              p
+                span(style='color: #555555;')
+                  span(style='font-weight: 400;')
+                    | Lập trình Android luôn nằm trong 
+                    strong Top 10
+                    |  những 
+                    strong công việc có thu nhập khủng
+                    |  và nhiều cơ hội nhất từ 
+                    strong 2013-2015
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400; color: #555555;')
+                  strong Nếu đi làm ở các studio
+                  | , công ty, chỉ cần có kinh nghiệm 6 tháng – 1 năm, thu nhập không dưới 1000$/tháng
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400; color: #555555;')
+                  strong Nếu khởi nghiệp
+                  | , làm freelancer hoặc mở studio, tùy vào khả năng của mỗi người mà thu nhập từ vài nghìn đến vài triệu đô.
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400; color: #555555;')
+                  span(style='font-weight: 400;')
+                    strong Không bị giới hạn bởi khoảng cách địa lý
+                    | , bạn có thể tiếp cận được hàng triệu người dùng trên khắp thế giới và tạo được giá trị xã hội cực lớn. VD như Co-founder TechKids Đỗ Anh Tú từng tạo ra game 2048 (5×5) với 3 triệu users hay Giảng viên Đạt Kin tạo ra Tiny Fly với 1 triệu users.
+              p .
+              p
+                b
+                  | THẾ NHƯNG, TẠI SAO MỘT LẬP TRÌNH VIÊN VIỆT NAM NÊN 
+                  span(style='color: #ff0000;') ĐI HỌC
+                  | , CHỨ 
+                  span(style='color: #ff0000;') KHÔNG NÊN TỰ HỌC
+                  | ?
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400; color: #555555;')
+                  | “Giáo dục và môi trường Việt Nam khiến tư tưởng của các bạn sinh viên Việt Nam khá “ăn xổi”, cứ nghĩ mobile dev là ngon ăn rồi nhảy vào, tự học được vài chiêu rồi copy đoạn code này, paste vào, bán thi thoảng được vài nghìn đô đã là sung sướng. Hoặc có những bạn theo đuổi rất tử tế thì lại bị thiếu tầm nhìn, không biết cách hợp tác với người khác, nhìn ra đường hướng phát triển và Marketing sản phẩm,… Những điều này khiến các bạn ấy chỉ làm được những sản phẩm 1 là chộp giật chỉ bán được trong thị trường VN hoặc 2 là những sản phẩm chỉ dừng lại ở 1 mức nào đó mà không phát triển được tiếp. Nó thực sự không tốt trong dài hạn.” Đọc thêm chia sẻ của Giảng viên Bùi Xuân Cảnh 
+                  span(style='color: #000080;')
+                    strong
+                      a(style='color: #000080;', href='http://techkids.edu.vn/index.php/instructor/bui-xuan-canh/', target='_blank') TẠI ĐÂY.
+              hr
+              h2(style='text-align: center;') 3. Tại sao chúng tôi nên chọn bạn
+              p
+                span(style='color: #ff0000;')
+                  i
+                    span(style='font-weight: 400;')
+                      | Chúng tôi không tìm kiếm những học viên bình thường.
+                      br
+                  i
+                    span(style='font-weight: 400;')
+                      | Chúng tôi tìm kiếm những người 
+                      strong KHÁC BIỆT!
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;')
+                  | Chấp nhận thử thách, sẵn sàng thay đổi bản thân trong mô hình học tập hoàn toàn mới.
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;') Tin tưởng vào bản thân. Luôn nỗ lực đến cùng.
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;')
+                  | Có mục tiêu học tập rõ ràng, có tinh thần cầu tiến, khiêm tốn. Và chúng tôi cực thích những người “dị”, khác người.
+              p
+                strong NGOÀI RA, BẠN CẦN:
+              p
+                | Vượt qua bài kiểm tra đầu vào: Lập trình hướng đối tượng (cho những ai có nền tảng cơ bản) hoặc Bài kiểm tra tư duy logic, số học (cho                                những ai chưa học Lập trình) và tiếng Anh cơ bản. 
+                strong Phỏng vấn live code trong vòng 3-5 tiếng
+                | . Nhận xét ngay sau phỏng vấn.
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;')
+                  strong Có kiến thức cơ bản
+                  |  về lập trình một trong các ngôn ngữ C++, C#, VB.net, Java, PHP… Đã sử dụng qua cơ sở dữ liệu sqllite, mysql, Microsoft SQL Server…
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;')
+                  strong Biết và sử dụng được
+                  |  hệ điều hành MAC, Photoshop là một lợi thế
+              p(style='padding-left: 60px;')
+                span(style='font-weight: 400;')
+                  strong Tiếng anh chuyên ngành
+                  |  sẽ giúp ích thêm bạn rất nhiều trong việc tìm và đọc tài liệu. Ngoài ra bạn sẽ nhận được
+                span(style='font-weight: 400;') Học bổng 100% khóa tiếng Anh giao tiếp cơ bản tại 
+                a(href='http://thuquandoanhnhan.org')
+                  span(style='font-weight: 400;') TQDN Vietnam
+              p(style='padding-left: 60px;')
+                | CHÚ Ý: Nếu bạn là người thực sự có tố chất và mong muốn học Lập trình di động, nhưng nền tảng chưa vững hoặc chưa được học đầy đủ,
+                strong  chúng tôi sẽ giúp bạn học 1 khóa Lập trình nền tảng hoàn toàn miễn phí 
+                | trước khóa học này
+                strong .
+              hr
+              h2(style='text-align: center;') 4. Lời gửi gắm đến những Lập trình viên tài năng
+              p
+                span(style='font-weight: 400;')
+                  strong Giáo dục và Công nghệ
+                  |  là một trong 2 hướng đi của cả thế giới trong những năm gần đây bởi sức mạnh kiến tạo tương lai của nó. Đó là lý do chúng tôi đã bắt đầu cuộc hành trình của mình với TQDN Vietnam 1 năm trước đây, cộng đồng lớn nhất Hà Nội về Kinh doanh – Kinh tế với 1200+ thành viên cực kỳ tài năng, và giờ là lúc chúng tôi bắt đầu với các bạn, những Lập trình viên tương lai.
+              p
+                span(style='font-weight: 400;')
+                  | Chúng tôi tin các bạn, nếu được truyền cảm hứng nhiều hơn, trau dồi nhiều hơn, đam mê và nỗ lực nhiều hơn thì các bạn sẽ làm được những điều thật sự khác biệt! Và chúng tôi hứa, sẽ đồng hành với bạn trong cuộ hành trình đầy thử thách này.
+            section
+              .article_title_wrapper.row
+                h3.section_title.col-sm-5.col-xs-9 Các buổi học
+              ul.list-group
+                li.list-group-item
+                  h5.list-group-item-heading 1. Android Overview
+                  p.list-group-item-text
+                    | Mở đầu giới thiệu về lập trình Mobile Giới thiệu về lập trình Andoird Java và triển vọng phát triển Làm quen với hệ điều hành MacOSX và XCode
+                li.list-group-item
+                  h5.list-group-item-heading 2. Activity
+                  p.list-group-item-text Activity & Practice Activity
+                li.list-group-item
+                  h5.list-group-item-heading 3. Basic Widgets
+                  p.list-group-item-text Basic Widgets & Practice
+                li.list-group-item
+                  h5.list-group-item-heading 4. Basic ViewGroup
+                  p.list-group-item-text Basic ViewGroup & Practice
+                li.list-group-item
+                  h5.list-group-item-heading 5. Advance ViewGroup
+                  p.list-group-item-text Advance ViewGroup & Practice
+                li.list-group-item
+                  h5.list-group-item-heading 6. Intent, Broadcast Receiver
+                  p.list-group-item-text Intent, Broadcast Receiver & Practice
+                li.list-group-item
+                  h5.list-group-item-heading 7. Async Task
+                  p.list-group-item-text Async Task - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 8. Service
+                  p.list-group-item-text Service - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 9. Saving data
+                  p.list-group-item-text Saving data - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 10. Content Provider
+                  p.list-group-item-text ContentProvider - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 11. Homescreen widget
+                  p.list-group-item-text Home screen widget - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 12. View Animation
+                  p.list-group-item-text View Animation - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 13. Properties Animation
+                  p.list-group-item-text Properties Animation - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 14. Multi media
+                  p.list-group-item-text  Multi media - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 15. Touch event
+                  p.list-group-item-text Touch event - practice
+                li.list-group-item
+                  h5.list-group-item-heading 16. Android decode howto
+                  p.list-group-item-text Android decode howto - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 17. Material design
+                  p.list-group-item-text Material design - Practice
+                li.list-group-item
+                  h5.list-group-item-heading 18. Hackathon
+                  p.list-group-item-text Hoàn thành và báo cáo Project cuối khóa.
