@@ -3,7 +3,7 @@ extends layout
 block content
   section#intro.intro.stars
       .container.center_inline_list
-        img.fade_up(src='/cms/img/TechKidsLogo.png', alt='TechKids')
+        img.fade_up(src='/cms/img/TechKidsLogo.png', alt='TechKids', style="margin-top:75px")
     section#about.about_us
       .container
         .fade_up
@@ -63,38 +63,39 @@ block content
     section#courses.courses
       .container
         .row
-          .col-sm-4.course_item.fade_scale
+          .col-sm-3.course_item.fade_scale
             div
               span.course_icon
                 a(href="/courses/1")
-                  img(src='/cms/img/icon1.png',height="150",width="150")
+                  img(src='/cms/img/python-round-150rg.png',height="110",width="110")
             h4
               a(href="/courses/1") CODE FOR EVERYONE
             p
             | Nếu bạn coi máy tính và internet là một phần cuộc sống của mình, thì TechKids tin học Lập trình là học cách làm cuộc sống của bạn tốt đẹp hơn: Hiệu quả hơn, tiết kiệm thời gian, công sức, tiền bạc và thú vị hơn rất nhiều!
 
-          //- .col-sm-3.course_item.fade_scale.fade_delay_1
-          //-   div
-          //-     span.course_icon
-          //-       img(src='http://demo.themeisle.com/zerif-pro/wp-content/uploads/sites/53/2014/07/Unknown-9.png')
-          //-   h4 CODING INTENSIVE
-          //-   p
-          //-   | Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu.
+          .col-sm-3.course_item.fade_scale.fade_delay_1
+            div
+              span.course_icon
+                img(src='/cms/img/icon4.png',height="110",width="110")
+            h4 
+              a(href="/courses/4") WEB FULLSTACK
+            p
+            | Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu.
 
-          .col-sm-4.course_item.fade_scale.fade_delay_2
+          .col-sm-3.course_item.fade_scale.fade_delay_2
             div
               span.course_icon
                 a(href="/courses/2")
-                  img(src='/cms/img/icon2.png',height="150",width="150")
+                  img(src='/cms/img/icon2.png',height="110",width="110")
             h4
-              a(href="/courses/2") IOS
+              a(href="/courses/2") iOS
             p
               | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
-          .col-sm-4.course_item.fade_scale.fade_delay_3
+          .col-sm-3.course_item.fade_scale.fade_delay_3
             div
-              span.course_icon
+              span.course_icon 
                 a(href="/courses/3")
-                  img(src='/cms/img/icon3.png',height="150",width="150")
+                  img(src='/cms/img/icon3.png',height="110",width="110")
             h4
               a(href="/courses/3") ANDROID
             p
@@ -112,35 +113,50 @@ block content
     section#teachers.stars.teachers
       .container
         .row.fade_up
-          h3.section_title.col-sm-5.col-xs-9 GIẢNG VIÊN
+          h3.section_title.col-sm-5.col-xs-9 GIẢNG VIÊN.
         .row
           .col-sm-12
             ul.teachers_list.center_inline_list
               li.fade_scale
-                img(2015='', src='/cms/img/Lehoangtu.jpg')
+                a(href="/instructors/1") 
+                  img(2015='', src='/cms/img/Lehoangtu.jpg')
                 h5
                   a(href="/instructors/1") Lê Hoàng Tú
                 p Project manager at FPT Software
               li.fade_scale
-                img(2015='', src='/cms/img/canh.jpg')
+                a(href="/instructors/2")
+                  img(2015='', src='/cms/img/canh.jpg')
                 h5
                   a(href="/instructors/2") Bùi Xuân Cảnh
                 p Project manager at FPT Software
               li.fade_scale
-                img(2015='', src='/cms/img/doanhtu.jpg')
+                a(href="/instructors/3")
+                  img(2015='', src='/cms/img/doanhtu.jpg')
                 h5
                   a(href="/instructors/3") Đỗ Anh Tú
                 p Co-founder Haivl.com
               li.fade_scale
-                img(2015='', src='/cms/img/dat.jpg')
+                a(href="/instructors/4")
+                  img(2015='', src='/cms/img/dat.jpg')
                 h5
                   a(href="/instructors/4") Nguyễn Tiến Đạt
                 p Director at PlumGame
+                
               //- li.fade_scale
               //-   img(2015='', src='cms/img/quynh.jpg')
               //-   h5
               //-     a(href="instructors/5") Cao Minh Quỳnh
               //-   p Project Manager at Viettel
+    section#join_us.join_us.stars
+      .container.fade_up
+        .row.text-center
+          h3.section_title.col-sm-5.col-xs-9 TRẢI NGHIỆM CÙNG TECHKIDS
+          p.section_subtitle Cùng viết những dòng code thay đổi cuộc đời bạn
+        .row.text-center
+          a.btn.btn-primary.col-sm-3.col-xs-9(href='/courses') KHÓA HỌC
+          a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/events') SỰ KIỆN
+
+  
     //- section#news.newsevent
     //-   .container
     //-     .row.text-center.fade_up
@@ -194,11 +210,4 @@ block content
     //-         a.see_more_link(href='#')
     //-           | Chi tiết 
     //-           span.fa.fa-chevron-right(aria-hidden='true')
-    section#join_us.join_us.stars
-      .container.fade_up
-        .row.text-center
-          h3.section_title.col-sm-5.col-xs-9 TRẢI NGHIỆM CÙNG TECHKIDS
-          p.section_subtitle Cùng viết nên những dòng code thay đổi cuộc đời bạn
-        .row.text-center
-          a.btn.btn-primary.col-sm-3.col-xs-9(href='/courses') KHÓA HỌC
-          a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/events') SỰ KIỆN
+    
