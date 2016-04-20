@@ -197,7 +197,7 @@ app.use('/khoa-hoc',router_courses)
 var router_articles = express.Router();
 
 // create a route to render the intructors-1.jade file.
-router_articles.get('/1', function (req, res) {
+router_articles.get('/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
 });
 
@@ -213,7 +213,7 @@ app.use('/chia-se/',router_articles)
 var router_events = express.Router();
 
 // create a route to render the intructors-1.jade file.
-router_events.get('/1', function (req, res) {
+router_events.get('/english-and-it-why-how-what', function (req, res) {
   res.render('events-1');
 });
 
