@@ -1,0 +1,5 @@
+.indeximg {
+	background: url('/cms/img/gen2.jpg') no-repeat center fixed;
+	height:1000px;
+	background-size: cover;
+}

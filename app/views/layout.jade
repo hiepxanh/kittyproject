@@ -13,6 +13,7 @@ html
       // CSS #self
       link(rel='stylesheet', type='text/css', href='cms/css/style.css')
       link(rel='stylesheet', type='text/css', href='cms/css/fadeIn.css')
+      link(rel='stylesheet', type='text/css', href='cms/css/layout.css')
     block scripts
       // JS Libs
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
@@ -73,7 +74,7 @@ html
             li
               a(href="/") TRANG CHỦ
             li
-              a(href="/contact") LIÊN HỆ
+              a(href="/lien-he") LIÊN HỆ
             li
       .container
         // Brand and toggle get grouped for better mobile display
@@ -90,30 +91,30 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.dropdown
-              a.dropdown-toggle(href="/about-us", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              a.dropdown-toggle(href="/ve-chung-toi", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                 | Về chúng tôi
                 span.visible-xs-inline-block.caret
               ul.dropdown-menu
                 li
-                  a(href="/about-us") Giới thiệu chung
+                  a(href="/ve-chung-toi") Giới thiệu chung
                 li
-                  a(href="/about-us#path") Sứ mệnh, tầm nhìn, giá trị cốt lõi
+                  a(href="/ve-chung-toi#sumenh-tamnhin") Sứ mệnh, tầm nhìn, giá trị cốt lõi
             li.dropdown
-              a.dropdown-toggle(href="/courses", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              a.dropdown-toggle(href="/khoa-hoc", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                 | Khóa học
                 span.visible-xs-inline-block.caret
               ul.dropdown-menu
                 li
-                  a(href="/courses/1") Code For Everyone
+                  a(href="/khoa-hoc/code-for-everyone") Code For Everyone
                 li
-                  a(href="/courses/2") Lập Trình iOS
+                  a(href="/khoa-hoc/iOS") Lập Trình iOS
                 li
-                  a(href="/courses/3") Lập Trình Android
+                  a(href="/khoa-hoc/android") Lập Trình Android
                 li
-                  a(href="/courses/4") Lập trình Web Fullstack
+                  a(href="/khoa-hoc/web-fullstack") Lập trình Web Fullstack
             li.dropdown
-              a.dropdown-toggle(href='/events', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | Sự kiện
+              a.dropdown-toggle(href='/chuong-trinh/', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Chương trình
                 span.visible-xs-inline-block.caret
               //- ul.dropdown-menu
               //-   li
@@ -123,8 +124,8 @@ html
               //-   li
               //-     a(href='#') Sự kiện TechKids hàng tháng
             li.dropdown
-              a.dropdown-toggle(href='/articles', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | Góc lập trình
+              a.dropdown-toggle(href='/chia-se', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Chia sẻ
                 span.visible-xs-inline-block.caret
               //- ul.dropdown-menu
               //-   li
@@ -169,8 +170,8 @@ html
             p Hotline: Ms. Ha: 0165 300 5670
           .col-sm-3
             h5
-              a(href="/events") TechKids event
+              a(href="/chuong-trinh/") Chương trình của techkids
             ul
               li 
-                a(href='events/1') English and IT – Why, How, What?
+                a(href='/chuong-trinh/1') English and IT – Why, How, What?
               

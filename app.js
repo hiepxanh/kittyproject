@@ -63,26 +63,39 @@ app.get('/', function (req, res) {
 app.get('/about-us', function (req, res) {
   res.render('about-us');
 });
-
+app.get('/ve-chung-toi', function (req, res) {
+  res.render('about-us');
+});
 // create a route to render the courses.jade file.
 app.get('/courses', function (req, res) {
   res.render('courses');
 });
-
+app.get('/khoa-hoc', function (req, res) {
+  res.render('courses');
+});
 
 // create a route to render the contact.jade file.
 app.get('/contact', function (req, res) {
   res.render('contact');
 });
-
+app.get('/lien-he', function (req, res) {
+  res.render('contact');
+});
+// create a route to render the event.jade file.
 app.get('/events', function (req, res) {
   res.render('events');
 });
-
+app.get('/chuong-trinh', function (req, res) {
+  res.render('events');
+});
+// create a route to render the articles.jade file.
 app.get('/articles', function (req, res) {
   res.render('articles');
 });
-
+app.get('/chia-se/', function (req, res) {
+  res.render('articles');
+});
+// create a route to render the portfolio.jade file.
 app.get('/portfolio', function (req, res) {
   res.render('portfolio');
 });
@@ -109,6 +122,22 @@ router_instructors.get('/4', function (req, res) {
   res.render('instructors-4');
 });
 
+router_instructors.get('/le-hoang-tu', function (req, res) {
+  res.render('instructors-1');
+});
+
+router_instructors.get('/bui-xuan-canh', function (req, res) {
+  res.render('instructors-2');
+});
+
+router_instructors.get('/do-anh-tu', function (req, res) {
+  res.render('instructors-3');
+});
+
+router_instructors.get('/nguyen-tien-dat', function (req, res) {
+  res.render('instructors-4');
+});
+
 router_instructors.get('/5', function (req, res) {
   res.render('instructors-5');
 });
@@ -117,7 +146,7 @@ router_instructors.get('/5', function (req, res) {
 router_instructors.use('/cms/', express.static(__dirname + '/public/'));
 
 app.use('/instructors',router_instructors)
-
+app.use('/giang-vien',router_instructors)
 //router cho courses
 //-------------------
 // get an instance of router
@@ -140,10 +169,27 @@ router_courses.get('/4', function (req, res) {
   res.render('courses-4');
 });
 
+router_courses.get('/code-for-everyone', function (req, res) {
+  res.render('courses-1');
+});
+
+router_courses.get('/iOS', function (req, res) {
+  res.render('courses-2');
+});
+
+router_courses.get('/android', function (req, res) {
+  res.render('courses-3');
+});
+
+router_courses.get('/web-fullstack', function (req, res) {
+  res.render('courses-4');
+});
+
 // Đường dẫn tới thư mục pulic, static file cho instructor
 router_courses.use('/cms/', express.static(__dirname + '/public/'));
 
 app.use('/courses',router_courses)
+app.use('/khoa-hoc',router_courses)
 //===================================
 //router cho articles
 //-------------------
@@ -158,7 +204,7 @@ router_articles.get('/1', function (req, res) {
 // Đường dẫn tới thư mục pulic, static file cho instructor
 router_articles.use('/cms/', express.static(__dirname + '/public/'));
 
-app.use('/articles',router_articles)
+app.use('/chia-se/',router_articles)
 //===================================
 //===================================
 //router cho events
@@ -174,7 +220,7 @@ router_events.get('/1', function (req, res) {
 // Đường dẫn tới thư mục pulic, static file cho instructor
 router_events.use('/cms/', express.static(__dirname + '/public/'));
 
-app.use('/events',router_events)
+app.use('/chuong-trinh/',router_events)
 //===================================
 
 app.route('/:url(api|auth|components|app|bower_components|assets)/*')

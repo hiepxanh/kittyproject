@@ -1,7 +1,9 @@
 extends layout
 
 block content
-
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  div
+    div(align="middle",style="margin: 100px 150px 100px 80px;")
+      hr.content_divider
+      img.img-responsive.img-rounded(src="/cms/img/404.jpg")
+      h1 Không tìm thấy trang của bạn rồi, về trang chủ nhé ? 
+        a(href="/") Trang Chủ

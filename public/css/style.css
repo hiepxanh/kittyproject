@@ -427,7 +427,7 @@ section.stars .section_title:after{
 
 .course_icon{
 	border-radius: 100%;
-	border:1px solid #ececec;
+	border:10px solid #ececec;
 	transition: border-color 0.3s;
 	display: inline-block;
 	padding:20px;
@@ -435,16 +435,16 @@ section.stars .section_title:after{
 }
 
 .course_item:nth-child(4n):hover .course_icon{
-	border-color: #02BBE9;
+	border-color: #34d293;
 }
 .course_item:nth-child(4n+1):hover .course_icon{
-	border-color: #F05C1E;
+	border-color:  #02BBE9;
 }
 .course_item:nth-child(4n+2):hover .course_icon{
-	border-color: #f7d861;
+	border-color: red;
 }
 .course_item:nth-child(4n+3):hover .course_icon{
-	border-color: #34d293;
+	border-color: #F05C1E;
 }
 
 .course_item h4{
@@ -463,16 +463,16 @@ section.stars .section_title:after{
 	position: absolute;
 }
 .course_item:nth-child(4n) h4:after{
-	border-color: #02BBE9;
+	border-color: #34d293;
 }
 .course_item:nth-child(4n+1) h4:after{
-	border-color: #F05C1E;
+	border-color: #02BBE9;
 }
 .course_item:nth-child(4n+2) h4:after{
-	border-color: #f7d861;
+	border-color: red;
 }
 .course_item:nth-child(4n+3) h4:after{
-	border-color: #34d293;
+	border-color: #F05C1E;
 }
 
 .teachers_list{
