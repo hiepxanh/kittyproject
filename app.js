@@ -54,6 +54,12 @@ app.use('/cms',express.static(path.join(__dirname, 'public')));
 // Đường dẫn tới thư mục upload
 app.use('/pictures/', express.static(__dirname + '/public/upload/'));
 //----------------------------route ------------------------------------------//
+app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
+  res.render('articles-1');
+});
+app.get('/chuong-trinh/su-kien/english-and-it-why-how-what', function (req, res) {
+  res.render('events-1');
+});
 // create a route to render the index.jade file.
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
@@ -211,6 +217,7 @@ app.use('/chia-se/',router_articles)
 //-------------------
 // get an instance of router
 var router_events = express.Router();
+
 
 // create a route to render the intructors-1.jade file.
 router_events.get('/english-and-it-why-how-what', function (req, res) {
