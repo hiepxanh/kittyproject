@@ -101,42 +101,78 @@ block content
     
           
     section#teachers.stars.teachers
-      .container
-        .row.fade_up
+      .row.fade_up
+        div(id="myCarousel" class="carousel slide" data-ride="carousel")
           h3.section_title.col-sm-5.col-xs-9 GIẢNG VIÊN.
-        .row
-          .col-sm-12
-            ul.teachers_list.center_inline_list
-              li.fade_scale
-                a(href="/giang-vien/le-hoang-tu") 
-                  img(2015='', src='/cms/img/Lehoangtu.jpg')
-                h5
-                  a(href="/giang-vien/le-hoang-tu") Lê Hoàng Tú
-                p Project manager at FPT Software
-              li.fade_scale
-                a(href="/giang-vien/bui-xuan-canh")
-                  img(2015='', src='/cms/img/canh.jpg')
-                h5
-                  a(href="/giang-vien/bui-xuan-canh") Bùi Xuân Cảnh
-                p Project manager at FPT Software
-              li.fade_scale
-                a(href="/giang-vien/do-anh-tu")
-                  img(2015='', src='/cms/img/doanhtu.jpg')
-                h5
-                  a(href="/giang-vien/do-anh-tu") Đỗ Anh Tú
-                p Co-founder Haivl.com
-              li.fade_scale
-                a(href="/giang-vien/nguyen-tien-dat")
-                  img(2015='', src='/cms/img/dat.jpg')
-                h5
-                  a(href="/giang-vien/nguyen-tien-dat") Nguyễn Tiến Đạt
-                p Director at PlumGame
+          // Indicators
+          //- ol.carousel-indicators
+          //-   li.active(data-target='#myCarousel', data-slide-to='0')
+          //-   li(data-target='#myCarousel', data-slide-to='1')
+          //-   li(data-target='#myCarousel', data-slide-to='2')
+          //-   li(data-target='#myCarousel', data-slide-to='3')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              ul.teachers_list.center_inline_list
+                li.fade_scale
+                  a(href="/giang-vien/le-hoang-tu") 
+                    img(2015='', src='/cms/img/Lehoangtu.jpg')
+                  h5
+                    a(href="/giang-vien/le-hoang-tu") Lê Hoàng Tú
+                  p Project manager at FPT Software
+                li.fade_scale
+                  a(href="/giang-vien/bui-xuan-canh")
+                    img(2015='', src='/cms/img/canh.jpg')
+                  h5
+                    a(href="/giang-vien/bui-xuan-canh") Bùi Xuân Cảnh
+                  p Project manager at FPT Software
+                li.fade_scale
+                  a(href="/giang-vien/do-anh-tu")
+                    img(2015='', src='/cms/img/doanhtu.jpg')
+                  h5
+                    a(href="/giang-vien/do-anh-tu") Đỗ Anh Tú
+                  p Co-founder Haivl.com
+                li.fade_scale
+                  a(href="/giang-vien/nguyen-tien-dat")
+                    img(2015='', src='/cms/img/dat.jpg')
+                  h5
+                    a(href="/giang-vien/nguyen-tien-dat") Nguyễn Tiến Đạt
+                  p Director at PlumGame
+            .item
+              ul.teachers_list.center_inline_list
+                li
+                  a(href="/giang-vien/nguyen-si-thanh-son")
+                    img(src="/cms/img/thanhson.jpg")
+                  h5
+                    a(href="/giang-vien/nguyen-si-thanh-son") Nguyễn Sĩ Thanh Sơn
+                  p Web Team Leader
+                li
+                  a(href="/giang-vien/ton-hong-duc")
+                    img(src="/cms/img/tonhongduc.jpg")
+                  h5
+                    a(href="/giang-vien/ton-hong-duc") TÔN HỒNG ĐỨC
+                  p  front-end developer
+                li
+                  a(href="/giang-vien/cuong-nguyen")
+                    img(src="/cms/img/cuong-nguyen.jpg")
+                  h5
+                    a(href="/giang-vien/cuong-nguyen") Cương Nguyễn
+                  p Fullstack Developer
+                li
+                  a(href="/giang-vien/tran-quang-hiep")
+                    img(src="/cms/img/tranquanghiep.jpg")
+                  h5
+                    a(href="/giang-vien/tran-quang-hiep") Trần Quang Hiệp
+                  p Python Developer
+          // Left and right controls
+          a(class="left carousel-control", href='#myCarousel', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a(class="right carousel-control", href='#myCarousel', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
+
                 
-              //- li.fade_scale
-              //-   img(2015='', src='cms/img/quynh.jpg')
-              //-   h5
-              //-     a(href="instructors/5") Cao Minh Quỳnh
-              //-   p Project Manager at Viettel
     section#partners.partners
       .container
         .row.text-center.fade_up
