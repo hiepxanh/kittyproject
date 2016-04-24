@@ -65,6 +65,10 @@ app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
 
+app.get('/shit', function (req, res) {
+  res.render('index2');
+});
+
 // create a route to render the about-us.jade file.
 app.get('/about-us', function (req, res) {
   res.render('about-us');
@@ -144,8 +148,20 @@ router_instructors.get('/nguyen-tien-dat', function (req, res) {
   res.render('instructors-4');
 });
 
-router_instructors.get('/5', function (req, res) {
+router_instructors.get('/nguyen-si-thanh-son', function (req, res) {
   res.render('instructors-5');
+});
+
+router_instructors.get('/ton-hong-duc', function (req, res) {
+  res.render('instructors-6');
+});
+
+router_instructors.get('/tran-quang-hiep', function (req, res) {
+  res.render('instructors-7');
+});
+
+router_instructors.get('/cuong-nguyen', function (req, res) {
+  res.render('instructors-8');
 });
 
 // Đường dẫn tới thư mục pulic, static file cho instructor

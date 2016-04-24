@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin giảng viên
+          p.section_subtitle TÔN HỒNG ĐỨC
+    section
+      .container
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .text-center
+              .profile_thumbnail
+                img(2015='', src='/cms/img/tonhongduc.jpg')
+            ul
+              li
+                em Số năm kinh nghiệm: 
+                | 9 năm
+              li
+                em Nơi sống: 
+                | Hà Nội
+          .col-sm-8
+            p I'm a Vietnamese Go player, front-end developer, and wannabe game creator.
+            p
+              | I have been working exclusively as a front-end developer on both web and mobile platforms since 2008, and recently dabble in game creation. My specialization is UI & visual: animations, transformations, 3D planetariums, fireworks, you got it. So if you're looking for a front-end dev who write nodejs and stuffs that an end-user will never see, I'm on the other end of the spectrum.
+            p
+              | I also answer Stackoverflow questions in my free time. You're welcome to send me a link to your front-end question if you're stuck in development. I quite enjoy fixing bugs, it's good exercise."
+            //- p
+            //-   |Ngoài công việc ở công ty, mình tham gia xây dựng các sản phẩm mã nguồn mở và viết blog để chia sẻ với cộng đồng. 
+            //- p
+            //-   |Đó cũng chính là cách mình học hỏi và tích lũy kiến thức cho bản thân. 
+            //- p
+            //-   |Đến với Techkids, mình mong muốn được chia sẻ nhiều hơn nữa. Và trên nền tảng những chia sẻ đó, các bạn trẻ sẽ tìm ra con đường riêng của mình, hướng thẳng đến thành công."
+            p See my product at :
+            p
+              | Website:
+              a(href='http://www.vatcss.info/', target='_blank') http://www.vatcss.info/
+            //- p
+            //-   | Github:
+            //-   a(href='https://github.com/thanhson1085', target='_blank') github.com/thanhson1085
+            
+    section
+      .container.articles_list
+        h3.section_title.col-sm-5.col-xs-9 Các khóa học của anh Đức
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/khoa-hoc/web-fullstack')
+                img(src='/cms/img/fullstack.png')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/khoa-hoc/web-fullstack') Khóa học Lập trình Web Fullstack
+            div
+              p
+                | Học lập trình web Fullstack từ Front-end, Back-end web bằng công nghệ NodeJS mới nhất.
+            a.see_more_link(href='/khoa-hoc/web-fullstack')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+        hr.content_divider
+        
