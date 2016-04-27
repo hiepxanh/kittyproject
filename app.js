@@ -206,6 +206,9 @@ router_courses.get('/android', function (req, res) {
 router_courses.get('/web-fullstack', function (req, res) {
   res.render('courses-4');
 });
+router_courses.get('/test', function (req, res) {
+  res.render('test');
+});
 
 // Đường dẫn tới thư mục pulic, static file cho instructor
 router_courses.use('/cms/', express.static(__dirname + '/public/'));

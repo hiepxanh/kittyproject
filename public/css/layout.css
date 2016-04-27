@@ -3,9 +3,15 @@
 	height:600px;
 	background-size: cover;
 }
-.carousel-inner {
+
+.background_markus_color {
+	background-color: #f5f5f5;
 }
 
-.carousel-indicators {
-	
+.content__item {
+	padding:0 10px;
+}
+
+.wrapper {
+	padding; 5px;
 }
