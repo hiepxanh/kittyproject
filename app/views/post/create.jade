@@ -1,0 +1,45 @@
+extends ../courses-layout.jade
+block scripts
+	script(src="/cms/js/jquery.1.10.2.min.js")
+	script(src="/cms/js/bootstrap.min.js")
+	script(src="/cms/js/tinymce4x/tinymce.min.js")
+	script(src="/cms/js/main.js")
+
+
+block subtitle
+	|Đăng bài viết
+block main_content
+
+	case status
+		when "success"
+			div(class="alert alert-success")
+				p #{message}
+
+		when "error"
+			div(class="alert alert-danger")
+				p #{message}
+
+	form(class="form form-horizontal" action="" method="POST" enctype="multipart/form-data")
+		div(class="form-group")
+			label(class="col-sm-2 control-label") Ảnh
+			div(class="col-sm-6")
+				input(class="form-control" type="file" name="picture")
+
+		div(class="form-group")
+			label(class="col-sm-2 control-label") Tiêu đề
+			div(class="col-sm-6")
+				input(class="form-control" type="text" name="title" placeholder="Title")
+
+		div(class="form-group")
+			label(class="col-sm-2 control-label") Lời giới thiệu
+			div(class="col-sm-6")
+				textarea(class="form-control" name="teaser" placeholder="Teaser")
+
+		div(class="form-group")
+			label(class="col-sm-2 control-label") Nội dung
+			div(class="col-sm-6")
+				textarea(class="form-control content-editor" name="content" placeholder="Content")
+
+		div(class="form-group")
+			div(class="col-sm-2 col-sm-offset-2")
+				button(type="submit" class="btn btn-sm btn-primary") Cập nhật

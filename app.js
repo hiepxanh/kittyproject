@@ -1,33 +1,55 @@
 
-
+var functions = require('./libs/functions.js');
 var express = require('express'),
   config = require('./config/config'),
   glob = require('glob'),
   mongoose = require('mongoose'),
   bodyParser = require('body-parser'),
   jade = require('jade'),
-  path = require('path');
+  path = require('path'),
+  multipart = require('connect-multiparty'),
+  fs = require('fs')
+  multipartMiddleware = multipart();
 
 // mongoose.connect(config.db);
-var db = mongoose.connection;
-db.on('error', function () {
+mongoose.connect('mongodb://techkids:codethechange@ds021751.mlab.com:21751/techkids');
+var dbMongo = mongoose.connection;
+dbMongo.on('error', function () {
   throw new Error('unable to connect to database at ' + config.db);
 });
-
-var models = glob.sync(config.root + '/app/models/*.js');
-models.forEach(function (model) {
-  require(model);
+// ------------dữ liệu-----------------------
+// var models = glob.sync(config.root + '/app/models/*.js');
+// models.forEach(function (model) {
+//   require(model);
+// });
+var PostSchema = mongoose.Schema({
+	title : String,
+	slug : String,
+	picture : String,
+	teaser : String,
+	content : String,
+	author: String,
+	time : Number
+});
+// ---- kiểm tra tình trạng kết nối mongo -----
+var Post = mongoose.model('Post', PostSchema);
+dbMongo.on('error', console.error.bind(console, 'connection error:'));
+dbMongo.once('open', function(){
+	console.log('MongoDb connected');
 });
 
+//=========================================================
 //app init
 var app = express();
-
 // the directory where the template files are located.
-app.set('views', './app.views')
+// var viewPath = path.join(__dirname, 'app/views/');
+// var viewPath ='/views'
+// app.set('views', viewPath);
 // the template engine to use.
 app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
-//
+//upload folder
+app.use('/pictures/', express.static(__dirname + '/public/upload/'));
 //=========================
 // get an instance of router
 var router = express.Router();
@@ -51,8 +73,79 @@ app.use('/', router);
 //app.use('/cms/', express.static(__dirname + '/public/'));
 app.use('/cms',express.static(path.join(__dirname, 'public')));
 
-// Đường dẫn tới thư mục upload
-app.use('/pictures/', express.static(__dirname + '/public/upload/'));
+
+// =================demo hệ thống mới==============
+app.use(bodyParser.urlencoded({
+  	extended: true
+}));
+
+// Handle request
+app.get('/test', function(req, res){
+
+	var posts = Post.find({}, function(err, result) {
+
+		// Sort by blog latest
+		result = result.sort({'id' : -1});
+
+		res.render('test', { title : 'Home page' , posts : result, functions : functions});
+	});
+
+});
+
+app.get('/post/:title/:id.html', function(req, res) {
+
+	var id = req.params.id || 0;
+
+	Post.findById(id, function(err, post) {
+
+		if(post) {
+			res.render('post/detail', {title : post.title, post : post});
+			return false;
+		}
+
+		res.render('error');
+	});
+
+});
+
+app.get('/shit', function(req, res) {
+	res.render('post/about-us');
+});
+app.get('/create-post', function(req, res) {
+	res.render('post/create', { title : 'Create a post' });
+});
+
+app.post('/create-post', multipartMiddleware, function(req, res) {
+
+	var post = new Post;
+	post.title = req.body.title;
+	post.slug = functions.removeAccent(req.body.title);
+	post.teaser = req.body.teaser;
+	post.content = req.body.content;
+
+	var file = req.files.picture;
+
+	var originalFilename = file.name;
+	var fileType         = file.type.split('/')[1];
+	var fileSize         = file.size;
+	var pathUpload       = __dirname + '/public/upload/' + originalFilename;
+
+	var data = fs.readFileSync(file.path);
+	fs.writeFileSync(pathUpload, data);
+
+	if( fs.existsSync(pathUpload) ) {
+		post.picture = originalFilename;
+	}
+
+	post.save(function(err, obj) {
+		if(!err) {
+			res.render('post/create', { status : 'success', message : 'Post successful!' });
+			return false;
+		}
+	});
+});
+
+
 //----------------------------route ------------------------------------------//
 app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
@@ -250,13 +343,15 @@ app.use('/chuong-trinh/',router_events)
 //===================================
 
 app.route('/:url(api|auth|components|app|bower_components|assets)/*')
-    .get((req, res) => {
+    .get((req, res,err) => {
         res.render('error'); // render jade file: views/error
+        console.log({err,data});
 });
 
 app.route('/*')
-    .get((req, res) => {
-        res.render('errror')
+    .get((req, res, err) => {
+        res.render('error');
+        console.log({err,data});
     });
 //</--------------------------route ----------------------------------------->//
 

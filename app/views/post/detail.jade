@@ -1,0 +1,7 @@
+extends ../courses-layout.jade
+block subtitle
+	| #{post.title}
+block main_content
+	h1 #{post.title}
+	p.well #{post.teaser}
+	div !{post.content}

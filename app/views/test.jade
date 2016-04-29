@@ -1,3 +1,16 @@
 extends courses-layout
 block subtitle
-  |CODE FOR EVERYONE shit newưs
+  |Góc lập trình
+block main_content
+  div(class="row")
+    .content_divider
+    .container.articles_list
+      - each post in posts
+        div(class="post-item col-sm-4")
+          a(href="#{ functions.urlPost(post) }")
+            h1(class="col-sm-12") #{post.title}
+            div.picture-crop
+              img(src="/pictures/#{post.picture}" class="col-sm-12 picture")
+          .content_divider
+
+  
