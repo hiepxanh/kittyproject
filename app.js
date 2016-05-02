@@ -84,7 +84,7 @@ app.get('/test', function(req, res){
 
 	var posts = Post.find({}, function(err, result) {
 
-		// Sort by blog latest
+		// Sort by blog latest  khó hiểu
 		result = result.sort({'id' : -1});
 
 		res.render('test', { title : 'Home page' , posts : result, functions : functions});
