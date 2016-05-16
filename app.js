@@ -1,4 +1,3 @@
-
 var functions = require('./libs/functions.js');
 var express = require('express'),
   config = require('./config/config'),
