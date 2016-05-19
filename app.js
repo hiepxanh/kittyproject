@@ -359,6 +359,5 @@ app.route('/*')
 console.log('so sad')
 
 require('./config/express')(app, config);
-app.listen(config.port, function () {
-  console.log('Express server listening on port ' + config.port);
-});
+app.listen(config.port,"127.0.0.1");
+console.log('Express server listening on port at 127.0.0.1 ' + config.port);
