@@ -107,9 +107,6 @@ app.get('/post/:title/:id.html', function(req, res) {
 
 });
 
-app.get('/shit', function(req, res) {
-	res.render('post/about-us');
-});
 app.get('/create-post', function(req, res) {
 	res.render('post/create', { title : 'Create a post' });
 });
