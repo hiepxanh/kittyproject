@@ -349,15 +349,13 @@ app.route('/*')
         res.render('error');
         console.log({err,data});
     });
-
-//===================================
 //</--------------------------route ----------------------------------------->//
 
 
 
 // app.get('/', function (req, res) {
 //   res.send('Hello World!');
-// });a
+// });
 console.log('so sad')
 
 require('./config/express')(app, config);
