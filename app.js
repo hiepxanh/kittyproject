@@ -140,6 +140,9 @@ app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, 
 app.get('/chuong-trinh/su-kien/english-and-it-why-how-what', function (req, res) {
   res.render('events-1');
 });
+app.get('/chuong-trinh/su-kien/de-co-01-nam-kinh-nghiem-sinh-vien-it-nen-lam-the-nao', function (req, res) {
+  res.render('events-2');
+});
 // create a route to render the index.jade file.
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
