@@ -1,0 +1,432 @@
+extends layout
+append scripts
+  script.
+    (function(h,e,a,t,m,p) {
+    m=e.createElement(a);m.async=!0;m.src=t;
+    p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+    })(window,document,'script','https://u.heatmap.it/log.js');
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin
+          p.section_subtitle Khóa học lập trình code_for_kids 
+    section
+      .container
+        hr.content_divider
+        article.row
+          aside.course_summary.fly_right_md.col-md-4
+            .item
+              h3.column_title Thông tin khóa học
+              p
+                | “Tất cả trẻ em trên toàn cầu nên học Lập trình” - Barack Obama.
+                | Những người xuất chúng như Bill Gates, Steve Jobs, Mark Zuckerberg,... đều nói rằng trẻ em nên học Lập trình càng sớm càng tốt!
+              p
+                i.fa.fa-calendar
+                em  Lịch khai giảng:
+                span.pull-right 26/06/2016
+              hr.sub_divider
+              p
+                i.fa.fa-clock-o
+                em  Thời gian học:
+                div chiều thứ 3,5 (15h00-17h15) sáng chủ nhật (19h-21h15)
+              p Địa điểm học: số 21, ngách 10, ngõ 121 chùa Láng
+              p Sỹ số: tối đa 12 em
+              hr.sub_divider
+              p
+                i.fa.fa-level-up
+                em  Thời lượng học:
+                div 2 tháng 3 buổi học chính/tuần
+              hr.sub_divider
+              p
+                i.fa.fa-credit-card
+                em  3 Học bổng tài năng:
+                span.pull-right 20-50%
+              p Học phí bao gồm tất cả quà tặng (sổ, áo TechKids...)
+              p Đăng ký trước 15/6: tặng 500.000vnd
+              p.price_tag(style="text-align:center; font-size:30px")
+                | 4.200.000
+                sup đ
+              a.btn.btn-danger.btn-block(href='https://docs.google.com/forms/d/1_FrFUVkUfwt1jSCPVd55nZ87ZN_5tpVvXLNllgKo4tU/edit') Đăng ký tại đây
+              hr
+            //- .item
+            //-   h3.column_title Giảng viên
+            //-   ul.users_list
+            //-     li
+            //-       .user_thumbnail
+            //-         a(href="/giang-vien/nguyen-si-thanh-son")
+            //-           img(src="/cms/img/thanhson.jpg")
+            //-       h5
+            //-         a(href="/giang-vien/nguyen-si-thanh-son") Nguyễn Sĩ Thanh Sơn
+            //-       p Back-end Developer
+            //-     li
+            //-       .user_thumbnail
+            //-         a(href="/giang-vien/ton-hong-duc")
+            //-           img(src="/cms/img/tonhongduc.jpg")
+            //-       h5
+            //-         a(href="/giang-vien/ton-hong-duc") Tôn Hồng Đức
+            //-       p  front-end developer
+            //-     li
+            //-       .user_thumbnail
+            //-         a(href="/giang-vien/cuong-nguyen")
+            //-           img(src="/cms/img/cuong-nguyen.jpg")
+            //-       h5
+            //-         a(href="/giang-vien/cuong-nguyen") Cương Nguyễn
+            //-       p Fullstack Developer
+            //-     li
+            //-       .user_thumbnail
+            //-         a(href="/giang-vien/tran-quang-hiep")
+            //-           img(src="/cms/img/tranquanghiep.jpg")
+            //-       h5
+            //-         a(href="/giang-vien/tran-quang-hiep") Trần Quang Hiệp
+            //-       p Front-end Developer
+            //-       sub
+          .col-md-8.fly_right_md
+            img.title_image(src="/cms/img/code for kids.png")
+            section
+              .article_title_wrapper.row
+                .item
+                  h3.section_title.col-sm-5.col-xs-9 Thông tin khóa học
+                  p(dir='ltr' style='font-style: italic;')
+                    span “Tất cả trẻ em trên toàn cầu nên học Lập trình” - Barack Obama.
+                  p(dir='ltr' style='font-style: italic;')
+                    span
+                      | Những người xuất chúng như Bill Gates, Steve Jobs, Mark Zuckerberg,... đều nói rằng trẻ em nên học Lập trình càng sớm càng tốt!
+                    span Lớp học này dành cho bạn.
+                  hr
+                .item
+                  h3(dir='ltr')
+                    span 1. MỤC ĐÍCH KHÓA HỌC:
+                  p(dir='ltr')
+                    span
+                      | Nhiều người vẫn nghĩ, lý do chính là vì Lập trình viên là nghề “hot”, ngành CNTT đang nổi lên như 1 hiện tượng có thể giải cứu thế giới. Thế nhưng, hơn thế nữa, với những đứa trẻ, có những lý do quan trọng hơn
+                  p 
+                    strong >> Phát triển tư duy
+                  p(dir='ltr')
+                    span Lập trình giúp đứa trẻ thông minh, nhạy bén hơn bởi bản chất của nó đòi hòi Tư duy khoa học, logic cao hơn rất nhiều công việc thông thường. Nhờ đó, giúp các em học tốt các môn Khoa học hơn (đặc biệt là Toán). 
+                  p 
+                    strong >> Làm giàu các kỹ năng sống
+                  p(dir='ltr')
+                    span Đó là kỹ năng giải quyết vấn đề, suy nghĩ độc lập, làm việc nhóm, kỹ năng lãnh đạo và khả năng tự tạo ra những sản phẩm cụ thể cho mình.
+                  p 
+                    strong >> Rèn luyện thái độ sống
+                  p(dir='ltr')
+                    span Lập trình đòi hỏi nỗ lực lớn từ mỗi người: tập trung hơn, kiên nhẫn hơn, biết nỗ lực hơn và quan trọng là không sợ sai. Đó là cả 1 quá trình thử nghiệm, học hỏi và trưởng thành.
+                  p(style="font-style:italic")
+                    span Trong 1 khảo sát, 90% bố mẹ ở Mỹ muốn Lập trình là một bộ môn chính trong trường học.
+                    span Đó là lý do TechKids đã tạo ra chương trình Code for Kids (Lập trình cho trẻ em), không chỉ với mục đích tìm kiếm, khám phá những đam mê của những đứa trẻ, mà còn giúp các em hoàn thiện chính bản thân mình.
+ 
+                  hr
+                .item
+                  h3(dir='ltr')
+                    span 2. HỌC GÌ Ở TECHKIDS?
+                  p(dir='ltr')
+                    span
+                      |Ngày khai giảng: 19/6/2016
+                  p(dir='ltr')
+                    span - Lịch học: <br> >> 3 - 5.15pm, chiều thứ 3, 5<br> >> 7 - 9.15pm, tối Chủ Nhật.
+                  p(dir='ltr')
+                    span
+                      | - Học phí: 4.200.000vnd
+                  p(dir='ltr')
+                    span - Địa điểm học - sỹ số:
+                    span Trụ sở chính: số 21, ngách 10, ngõ 121 chùa Láng
+                    span Sĩ số: tối đa 12 em
+                  p(dir='ltr')
+                    span - Yêu cầu:
+                    span >> Có sẵn máy tính xách tay (laptop)
+                    span >> Là học sinh cấp 2: từ lớp 6 đến 9
+                    span >> Nếu là học sinh cấp 3: tham khảo chương trình: <a href="http://techkids.vn/khoa-hoc/code-for-everyone "> code for everyone </a>
+                  p(dir='ltr')
+                    span - Cách tham gia:
+                    span >> Đăng ký tại trang web này 
+                    span >> Kiểm tra đầu vào và phỏng vấn ngắn. Sau khi đăng ký, TechKids sẽ hướng dẫn các em.
+                  hr
+                .item
+                  h3(dir='ltr')
+                    span 3. HỌC Ở TECHKIDS THÌ SAO?
+                  p(dir='ltr')
+                    span >> Vui:
+                  p(dir='ltr')
+                    span Phương pháp của TechKids là gamification (trò chơi hóa) kết hợp giữa các hoạt động Lập trình trên máy tính, trò chơi tập thể và các cuộc thi nhỏ. Việc học sẽ không hề khô khan hay buồn tẻ.<br>Sau khóa học, mỗi em đều có thể tự tạo ra những trò chơi thú vị cho riêng mình.<br>Các em sẽ có một mùa hè thực sự đáng nhớ!
+                  p(dir='ltr')
+                    span >>  Quan tâm đến từng em:<br>Mỗi em sẽ có một “quản giáo” để theo sát trong suốt quá trình học tập, rèn luyện. Những “quản giáo” này không chỉ giúp về mặt kiến thức, mà còn là thái độ và tinh thần rèn luyện của các em.
+                  p(dir='ltr')
+                    span >> Định hướng phát triển<br>Nếu học trò có đam mê và tài năng Lập trình, chúng tôi có hướng phát triển cho các em đi tiếp.<br>Nếu học trò có tố chất kinh doanh, tài chính, hay có định hướng du học, chúng tôi đều có thể đồng hành với các em trên con đường sau này.
+                  p(dir='ltr')
+                    span
+                      | - Chương trình học:Nếu muốn biết chương trình học hoặc bất cứ thắc mắc gì, vui lòng liên hệ trực tiếp TechKids.
+                .item
+                  h3(dir='ltr')
+                    span 4. Lời nhắn gửi
+                  p TechKids hy vọng rằng, thông qua chương trình này, chúng ta cùng khám phá ra được những tài năng Công Nghệ, hay chỉ đơn giản, có một mùa hè thật vui và ý nghĩa!
+                    hr
+            section
+              .item.syllabus  
+                .article_title_wrapper.row
+                  h3.section_title.col-sm-5.col-xs-9 CODE INTENSIVE WITH JS
+                ul.list-group
+                  li.list-group-item
+                    h5.list-group-item-heading 1. Javascript fundamental & Git Basic
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 2. Javascript fundamental with OOP
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 3. Canvas & Game development introduction 
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 4. Player & Weapon 
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 5. Enemy & Enemy Weapon
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 6. Collision detection & Handling
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 7. Scene transition
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 8. Project execution - Question & Answer
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 9. Hackathon
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 10. Demo Day
+                    p.list-group-item-text
+                    
+                  h3.section_title.col-sm-5.col-xs-9 Front End
+                ul.list-group
+                  li.list-group-item
+                    h5.list-group-item-heading 11. Introduction
+                    p.list-group-item-text
+                      | + Setup environment
+                      |+ Using Webstorm, notepad++ editor
+                      |+ Git, Github
+                      |+ Git basic 
+                      |+ Git flow
+                      |+ Create github repository
+                      |+ Practice
+
+                  li.list-group-item
+                    h5.list-group-item-heading 12. Git Lab:
+                    p.list-group-item-text
+                      |+ Using Source Tree tool
+                      |+ commit, push, pull, merge (rebase) 
+                  li.list-group-item
+                    h5.list-group-item-heading 13. HTML 
+                    p.list-group-item-text
+                      |+ Introduction
+                      |+ Basic HTML tags: h1, h2, p, input…
+                      |+ HTML Tag with attributes: img, a, input…
+                      |+ Div and HTML5 tags
+                      |+ Practice
+                  li.list-group-item
+                      h5.list-group-item-heading 14. CSS basic 
+                      p.list-group-item-text
+                        |+ Include CSS into HTML
+                        |+ CSS syntax
+                        |+ CSS selectors
+                        |+ Bowser developer tool (chrome, firefox, IE)
+                        |+ Practice 
+                  li.list-group-item
+                    h5.list-group-item-heading 15. HTML, CSS Lab 1:
+                    p.list-group-item-text
+                      |+ Create Login Page
+                      |+ Create Home menu
+                  li.list-group-item
+                    h5.list-group-item-heading 16. CSS advance
+                    p.list-group-item-text
+                      |+ Position
+                      |+ Display
+                      |+ Float
+                      |+ Sizing
+                      |+ Animations
+                  li.list-group-item
+                    h5.list-group-item-heading 17. HTML, CSS Lab 2
+                    p.list-group-item-text
+                      |+ Create Home Page example
+                      |+ Bootstrap introduction
+                  li.list-group-item
+                    h5.list-group-item-heading 18. Javascript 
+                    p.list-group-item-text
+                      |+ Introduction
+                      |+ Include javascript into HTML
+                      |+ DOM object
+                      |+ DOM events
+                      |+ Practice: Handle login button in login page
+                  li.list-group-item
+                    h5.list-group-item-heading 19. Javascript language
+                    p.list-group-item-text
+                      |+ Variable
+                      |+ Object
+                      |+ Operator: +-*/
+                      |+ Array & Loop
+                      |+ Function
+
+                  li.list-group-item
+                    h5.list-group-item-heading 20. Javascript Lab:
+                    p.list-group-item-text 
+                      |+ Create Stop watch Page
+                      | + Jquery introduction & practice
+                  li.list-group-item
+                    h5.list-group-item-heading 21. AngularJS Part 1
+                    p.list-group-item-text
+                      |+ Introduction
+                      |+ Include Angular JS into Project
+                      |+ MVVM
+                      |+ Practice
+                  li.list-group-item
+                    h5.list-group-item-heading 22. AngularJS Part 2
+                    p.list-group-item-text
+                      |+ Directive
+                      |+ Services
+                      |+ Routing
+                  
+                  li.list-group-item
+                    h5.list-group-item-heading 23. AngularJS Lab 
+                    p.list-group-item-text
+                      |+ Create custom Directive (Navbar)
+                      |+ Create List Page
+                      |+ Create New Post page
+                  li.list-group-item
+                    h5.list-group-item-heading 24. Mini Hackathon 
+                    p.list-group-item-text
+                      | Full-day
+                  li.list-group-item
+                    h5.list-group-item-heading 25. Node JS
+                    p.list-group-item-text 
+                      |+ Setup environment
+                      |+ Nodejs basic
+                      |+ Node module export, require
+                      |+ Path, FS module
+                      |+ NPM
+                  li.list-group-item
+                    h5.list-group-item-heading 26. NodeJS web
+                    p.list-group-item-text 
+                      |+ Express
+                      |+ Web server with Express
+                      |+ Express Router
+                  li.list-group-item
+                    h5.list-group-item-heading 27. NodeJS Lab
+                    p.list-group-item-text
+                      |+ Bower introduction
+                      |+ Create full project with Nodejs + Express, AngularJS, Bootstrap
+                  li.list-group-item
+                    h5.list-group-item-heading 28. Preprocessor & Build
+                    p.list-group-item-text
+                      |+ Jade 
+                      |+ Sass
+                      |+ Gulp
+                  li.list-group-item
+                    h5.list-group-item-heading 29. Preprocessor & Build Lab
+                    p.list-group-item-text
+                      |+ Create Gulp task (build, run, Jade compile, Sass Compile…)
+                      |+ Convert Home page to using Jade, Sass
+                  li.list-group-item
+                    h5.list-group-item-heading 30. Hackathon (Full weekend day)
+                    p.list-group-item-text
+                      | 
+                  h3.section_title.col-sm-5.col-xs-9 Back End 
+                ul.list-group      
+                  li.list-group-item
+                    h5.list-group-item-heading 31. Setup Working Environment
+                    p.list-group-item-text
+                      |+ Install Virtualbox
+                      |+ Install Vagrant
+                      |+ Basic Linux command line
+                      |+ Install NPM on Ubuntu Trusty
+                  li.list-group-item
+                    h5.list-group-item-heading 32. Build the first  API
+                    p.list-group-item-text
+                      |+ Manage packages with NPM
+                      |+ Introduce Restful API
+                      |+ Build the first API
+                      |+ Manage Logs
+                      |+ Manage Config
+                  li.list-group-item
+                    h5.list-group-item-heading 33. Working with MongoDB
+                    p.list-group-item-text 
+                      |+ Choose NoSQL or SQL
+                      |+ Install MongoDB on Ubuntu Trusty
+                      |+ Connect MongoDB from ExpressJS
+                      |+ Build User Register API
+
+                  li.list-group-item
+                    h5.list-group-item-heading 34. Complete  User Management API
+                    p.list-group-item-text
+                      |+ Build Login API
+                      |+ Build  API getUserDetails, getListUsers
+                      |+ Writing Unit Test
+                      |+ Document API with Swagger
+                      |+ Authorize APIs  with Token based Authentication
+
+                  li.list-group-item
+                    h5.list-group-item-heading 35. LAB: Build Update User API 
+                    p.list-group-item-text
+                      |+ Build  API
+                      |+ Write Unittest
+                      |+ Compose Swagger
+
+                  li.list-group-item
+                    h5.list-group-item-heading 36. LAB: Build Create/Update Product API
+                    p.list-group-item-text
+                      |+ Build  API
+                      |+ Write Unittest
+                      |+ Compose Swagger
+     
+                  li.list-group-item
+                    h5.list-group-item-heading 37. LAB: Build get/getList Product API
+                    p.list-group-item-text
+                      |+ Build  API
+                      |+ Write Unittest
+                      |+ Compose Swagger
+                  li.list-group-item
+                    h5.list-group-item-heading 38. Mini Hackaton
+                    p.list-group-item-text
+                      |Full-day
+                  li.list-group-item
+                    h5.list-group-item-heading 39. Working with Cache, Queue
+                    p.list-group-item-text
+                      |+ Upload Avatar
+                      |+ Working with Queue to send Registration Email
+                      |+ Build Get Config API
+                      |+ Apply Cache for Get Config API
+                      
+                  li.list-group-item
+                    h5.list-group-item-heading 40. LAB: Build Create/Update Config API
+                    p.list-group-item-text
+                      |+ Build Create Config API
+                      |+ Build Delete Config API
+                      |+ Manage Cache in Config API
+
+                  li.list-group-item
+                    h5.list-group-item-heading 41. LAB: Using Queue to create thumbnails
+                    p.list-group-item-text
+                      |+ Writing Producer
+                      |+ Writing Consumer to create thumbnail
+
+                  li.list-group-item
+                    h5.list-group-item-heading 42. Deployment
+                    p.list-group-item-text
+                      |+ Install and Use PM2
+                      |+ Configure webserver Nginx
+                      |+ Introduce CI/CD
+                      |+ Introduce DevOps
+
+                  li.list-group-item
+                    h5.list-group-item-heading 43. LAB: Using Jenkins for the deployment
+                    p.list-group-item-text
+                      |+ Install Virtual Machine and Jenkins
+                      |+ Config Jenkins to deploy the product
+                  li.list-group-item
+                    h5.list-group-item-heading 44. Final Hackathon (Full weekend day)
+                    p.list-group-item-text
+                  li.list-group-item
+                    h5.list-group-item-heading 45. Demo Day
+                    p.list-group-item-text
+                //div(style="height:50px")
+                div(style="text-align:center;margin: 20px auto; width: 30%;")
+                  a.btn.btn-danger.btn-block(href='https://docs.google.com/forms/d/1_FrFUVkUfwt1jSCPVd55nZ87ZN_5tpVvXLNllgKo4tU/edit') Đăng ký tại đây

@@ -316,6 +316,11 @@ router_courses.get('/android', function (req, res) {
 router_courses.get('/web-fullstack', function (req, res) {
   res.render('courses-4');
 });
+
+router_courses.get('/code-for-kids', function (req, res) {
+  res.render('courses-5');
+});
+
 router_courses.get('/test', function (req, res) {
   res.render('test');
 });
