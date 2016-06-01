@@ -140,7 +140,34 @@ app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, 
 app.get('/chuong-trinh/su-kien/english-and-it-why-how-what', function (req, res) {
   res.render('events-1');
 });
-// create a route to render the index.jade file.
+app.get('/chuong-trinh/su-kien/de-co-01-nam-kinh-nghiem-sinh-vien-it-nen-lam-the-nao', function (req, res) {
+  res.render('events-2');
+});
+app.get('/chuong-trinh/su-kien/tim-kiem-nhung-dua-tre-cong-nghe-2016', function (req, res) {
+  res.render('events-3');
+});
+app.get('/chuong-trinh/su-kien/hoc-lap-trinh-mien-phi-1-thang', function (req, res) {
+  res.render('events-4');
+});
+app.get('/chuong-trinh/su-kien/coding-work-shop-2', function (req, res) {
+  res.render('events-5');
+});
+app.get('/chuong-trinh/su-kien/free-training-google-apps', function (req, res) {
+  res.render('events-6');
+});
+app.get('/chuong-trinh/su-kien/keu-goi-500-ae', function (req, res) {
+  res.render('events-7');
+});
+app.get('/chuong-trinh/su-kien/coding-workshop-learn-to-code-should-i', function (req, res) {
+  res.render('events-8');
+});
+app.get('/chuong-trinh/su-kien/coding-for-women', function (req, res) {
+  res.render('events-9');
+});
+app.get('/chuong-trinh/su-kien/workshop-c4e', function (req, res) {
+  res.render('events-10');
+});
+// create a route to render the index.jade file.  
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
