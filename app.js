@@ -63,7 +63,6 @@ app.use('/', router);
 //app.use('/cms/', express.static(__dirname + '/public/'));
 app.use('/cms',express.static(path.join(__dirname, 'public')));
 
-
 // =================demo hệ thống mới==============
 app.use(bodyParser.urlencoded({
   	extended: true
@@ -134,6 +133,10 @@ app.post('/create-post', multipartMiddleware, function(req, res) {
 
 
 //----------------------------route ------------------------------------------//
+app.get('/summer-code-camp', function(req,res) {
+  res.sendFile(__dirname + '/public/Summer Camp/index.html');
+})
+
 app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
 });
@@ -167,7 +170,7 @@ app.get('/chuong-trinh/su-kien/coding-for-women', function (req, res) {
 app.get('/chuong-trinh/su-kien/workshop-c4e', function (req, res) {
   res.render('events-10');
 });
-// create a route to render the index.jade file.  
+// create a route to render the index.jade file.
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
