@@ -135,7 +135,6 @@ h2.opensans{
   display: inline-block;
   padding: 10px 22px;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .nav a:hover,
@@ -155,7 +154,7 @@ h2.opensans{
 
 .register_form{
   border-radius: 6px;
-  border: 6px solid #3bb4d2;
+  border: 3px solid #3bb4d2;
   background: rgba(255,255,255,0.2);
   padding: 20px 25px;
 }
@@ -166,14 +165,13 @@ h2.opensans{
   font-weight: 700;
   text-align: center;
   font-size: 1.4rem;
-  margin-bottom: 20px;
 }
 
 .register_form input,
 .register_form select{
   display: block;
   width: 100%;
-  margin: 15px 0;
+  margin: 20px 0;
   padding: 10px 16px;
   font-size: 1.2rem;
   font-weight: 300;
@@ -532,18 +530,14 @@ h2.opensans{
   .register_block{
     flex-direction: row;
     height: 100vh;
-    padding-left: 120px;
-
   }
   .register_form{
     order: 1;
-    margin-top: -120px;
   }
   .shoutout{
     order: 2;
     padding-left: 70px;
     margin-bottom: 0;
-    margin-top: -120px;
   }
 }
 .modal {
