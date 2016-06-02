@@ -50,7 +50,6 @@ app.engine('jade', require('jade').__express);
 //upload folder
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pictures/', express.static(__dirname + '/public/upload/'));
-
 //=========================
 var router = express.Router();
 router.use(function(req, res, next) {
