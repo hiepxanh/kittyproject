@@ -549,7 +549,7 @@ section.stars .section_title:after{
     background: #e96656;
 }
 .join_us{
-	padding: 50px 0;
+	padding: 0 0 100px 0;
 }
 .btn {
     border-radius: 0;

@@ -48,7 +48,9 @@ var app = express();
 app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
 //upload folder
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pictures/', express.static(__dirname + '/public/upload/'));
+
 //=========================
 var router = express.Router();
 router.use(function(req, res, next) {
@@ -135,8 +137,7 @@ app.post('/create-post', multipartMiddleware, function(req, res) {
 //----------------------------route ------------------------------------------//
 app.get('/summer-code-camp', function(req,res) {
   res.sendFile(__dirname + '/public/Summer Camp/index.html');
-})
-
+});
 app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
 });
