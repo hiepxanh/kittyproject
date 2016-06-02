@@ -307,7 +307,7 @@ section.stars .section_title:after{
 }
 
 .article_title_wrapper{
-	margin: 40px 0;
+	margin: 40px 0 0 0;
 }
 
 .column_title{
@@ -562,6 +562,7 @@ section.stars .section_title:after{
 }
 .join_us .btn{
 	margin: 40px 10px 0;
+
 	float: none;
 }
 
