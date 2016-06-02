@@ -7,7 +7,7 @@ var express = require('express'),
   jade = require('jade'),
   path = require('path'),
   multipart = require('connect-multiparty'),
-  fs = require('fs')
+  fs = require('fs'),
   multipartMiddleware = multipart();
 
 // mongoose.connect(config.db);
