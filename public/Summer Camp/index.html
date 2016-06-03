@@ -15,7 +15,7 @@
       <div>Summer</div>
       <div>Code</div>
       <div>Camp</div>
-    </div>
+    </div> 
     <nav class="nav">
       <a href="#register">Đăng ký</a>
       <a href="#introduction">Giới thiệu</a>
@@ -57,9 +57,9 @@
         <option value="Sinh viên">Sinh viên</option>
         <option value="Lập trình viên">Lập trình viên</option>
       </select>
-      <!--<div class="g-recaptcha" data-sitekey="6LdJZyETAAAAAOvKQaWLFXC5c77Wcmi72F3nrCXI" id="rcaptcha" ></div> -->
+      
       <div class="form_footer">
-        <span class="only2">Chỉ có 2 lớp duy nhất mùa hè này!</span><button type="submit" class="btn">Đăng ký ngay</button>
+        <span class="only2">Chỉ có 2 lớp duy nhất mùa hè này!</span><button id="button_home" class="btn">Đăng ký ngay</button>
       </div>
     </form>
   </section>
@@ -70,7 +70,7 @@
     <div>Bạn sẽ sống 1 tháng hăng say nhất trong cuộc đời mình!</div>
   </section>
 
-  <section class="blue_bg benefit_block">
+  <section class="white_bg benefit_block">
     <div class="white_bg page_block">
       <img src="/cms/img/job.png">
       <h4>ĐẢM BẢO VIỆC LÀM</h4>
@@ -90,28 +90,34 @@
 
   <section id="scc" class="page_block img_bg scc_block">
     <h2 class="opensans">KHOÁ HỌC GẦN NHẤT </h2>
-
-    <article class="scc_tabs">
-      <nav>
-        <a class="scc_tab_button active" href="#scc_fee">HỌC PHÍ</a>
-        <a class="scc_tab_button scc_middle_tab" href="#scc_time">THỜI GIAN</a>
-        <a class="scc_tab_button" href="#scc_more">THÔNG TIN KHÁC</a>
-      </nav>
-      <div id="scc_fee" class="tab active">
-        <p>Dành cho sinh viên: <strong class="price_tag">7.800.000 VNĐ</strong></p>
-        <p>Dành cho người đi làm: <strong class="price_tag">8.600.000 VNĐ</strong></p>
+<div class="scc_table">
+    <table>
+      <tr>
+        <td class="table_title"><h2>HỌC PHÍ</h2></td>
+        <td class="table_content"><p>Dành cho sinh viên: <strong class="price_tag">7.800.000 VNĐ                </strong></p>
+        <p>Dành cho người đi làm: <strong class="price_tag">8.600.000 VNĐ                 </strong></p>
         <p>5 suất học bổng: <strong>10 - 20 - 30 - 50 - 100%</strong></p>
         <p>Được Techkids alumni giới thiệu: Giảm <strong>5%</strong> học phí</p>
-        <p>Đăng ký theo nhóm 2 người trở lên: Giảm mỗi người <strong>5%</strong> học phí</p>
-        <p>Doanh nghiệp muốn đào tạo nhân viên: Liên hệ trực tiếp</p>
-      </div>
-      <div id="scc_time" class="tab" >Insert thời gian here</div>
-      <div id="scc_more" class="tab" >Insert thông tin khác here</div>
+        <p>Đăng ký theo nhóm 2 người trở lên:</p> 
+        <p>Giảm mỗi người <strong>5%</strong> học phí</p>
+        <p>Doanh nghiệp muốn đào tạo nhân viên:</p> 
+        <p>Liên hệ trực tiếp</p></td>
+      </tr>
+      <tr>
+        <td class="table_title"><h2>LỚP HỌC</h2></td>
+        <td class="table_content"><p>Khai giảng: <strong>ngày 2/7</strong></p>
+        <p><strong>CHỈ 1 LỚP ANDROID - 1 LỚP iOS DUY NHẤT!</strong></p>
+        <p>Thời lượng học: <strong>~ 14H/ngày, 30 ngày/tháng</strong></p>
+        <p><strong>Sỹ số lớp học: 10-12 người</strong></p>
+        </td>
+      </tr>
+    </table>
+</div>
     </article>
   </section>
 
   <section id="howtojoin" class="page_block white_bg howtojoin_block">
-    <h2 class="opensans">LÀM SAO ĐỂ THAM GIA</h2>
+    <h2>LÀM SAO ĐỂ THAM GIA</h2>
     <div class="howto_steps">
       <div class="howto_step">
         <span class="orange_dot"></span>
@@ -130,52 +136,52 @@
       </div>
     </div>
     <div>
-      <button type="submit" class="btn btn_big">Đăng ký ngay</button>
+      <button type="submit" class="btn">Đăng ký ngay</button>
     </div>
   </section>
 
   <section id="lecturer" class="page_block img_bg lecturer_block">
-    <h2 class="opensans">GIẢNG VIÊN</h2>
+    <h2>GIẢNG VIÊN</h2>
     <ul class="lecturer_list">
       <li>
-        <img src="http://placehold.it/200x200">
-        <h5>LÊ HOÀNG TÚ</h5>
-        <p>PROJECT MANAGERFPT SOFTWARE</p>
+        <a href="/giang-vien/le-hoang-tu"><img src="cms/img/Lehoangtu.jpg" width="170px"></a> 
+        <a href="/giang-vien/le-hoang-tu"><h5 class="roboto">LÊ HOÀNG TÚ</h5></a>
+        <p>PROJECT MANAGER AT FPT SOFTWARE</p>
       </li>
       <li>
-        <img src="http://placehold.it/200x200">
-        <h5>LÊ HOÀNG TÚ</h5>
-        <p>PROJECT MANAGERFPT SOFTWARE</p>
+        <a href="/giang-vien/bui-xuan-canh"><img src="cms/img/canh.jpg" width="170px"></a>
+        <a href="/giang-vien/bui-xuan-canh"><h5 class="roboto">BÙI XUÂN CẢNH</h5></a>
+        <p>PROJECT MANAGER AT FPT SOFTWARE</p>
       </li>
       <li>
-        <img src="http://placehold.it/200x200">
-        <h5>LÊ HOÀNG TÚ</h5>
-        <p>PROJECT MANAGERFPT SOFTWARE</p>
+        <a href="/giang-vien/do-anh-tu"><img src="cms/img/doanhtu.jpg" width="170px"></a>
+        <a href="/giang-vien/do-anh-tu"><h5 class="roboto">ĐỖ ANH TÚ</h5></a>
+        <p>CO-FOUNDER HAIVL.COM</p>
       </li>
       <li>
-        <img src="http://placehold.it/200x200">
-        <h5>LÊ HOÀNG TÚ</h5>
-        <p>PROJECT MANAGERFPT SOFTWARE</p>
+        <a href="/giang-vien/nguyen-tien-dat"><img src="cms/img/dat.jpg" width="170px"></a>
+        <a href="/giang-vien/nguyen-tien-dat"><h5 class="roboto">NGUYỄN TIẾN ĐẠT</h5></a>
+        <p>DIRECTOR AT PLUMGAME</p>
       </li>
     </ul>
   </section>
 
   <section class="page_block blue_bg partner_block">
-    <h2 class="opensans">ĐỐI TÁC</h2>
+    <h2>ĐỐI TÁC</h2>
     <ul class="partner_list">
-      <li><img src='/cms/img/Topica.png' alt="Topica"></img></li>
-      <li><img src='/cms/img/Samsung.png' alt="Samsung"></img></li>
-      <li><img src='/cms/img/BKAV.png' alt="BKAV"></img></li>
-      <li><img src='/cms/img/TinhVan.png' alt="TinhVan"></img></li>
-      <li><img src='/cms/img/Viettel.png' alt="Viettel"></img></li>
-      <li><img src='/cms/img/Fpt.png' alt="FPT"></img></li>
+      <li><a href="https://topica.edu.vn/"><img src='/cms/img/Topica.png' alt="Topica"></img></a></li>
+      <li><a href="https://www.samsung.com/vn/home/"><img src='/cms/img/Samsung.png' alt="Samsung"></img></a></li>
+      <li><a href="http://bkav.com.vn"><img src='/cms/img/BKAV.png' alt="BKAV"></img></a></li>
+      <li><a href="http://tinhvan.vn/"><img src='/cms/img/TinhVan.png' alt="TinhVan"></img></a></li>
+      <li><a href="http://viettel.com.vn/"><img src='/cms/img/Viettel.png' alt="Viettel"></img></a></li>
+      <li><a href="https://www.fpt.com.vn/"><img src='/cms/img/Fpt.png' alt="FPT"></img></a></li>
     </ul>
   </section>
 
   <footer class="footer page_block gray_bg">
     <div class="logo_footer">
-      <a href="www.techkids.vn" target="_blank"><img src="/cms/img/techkid_logo.png"></a>
-      <a href="www.techkids.vn" target="_blank">www.techkids.vn</a>
+      <a href="http://www.techkids.vn" target="_blank"><img src="/cms/img/techkid_logo.png"></a>
+      <a href="http://www.techkids.vn" target="_blank">www.techkids.vn</a>
     </div>
     <div class="contact">
       <h3>Kết nối với chúng tôi</h3>
@@ -188,8 +194,8 @@
     <div>
       <h3>Đến thăm chúng tôi</h3>
       <div class="social_list">
-        <a href="www.techkids.vn"><img src="/cms/img/icon_web.png"></a>
-        <a href="#"><img src="/cms/img/icon_fb.png"></a>
+        <a href="http://www.techkids.vn"><img src="/cms/img/icon_web.png"></a>
+        <a href="https://www.facebook.com/Techkids.Code.the.Change/"><img src="/cms/img/icon_fb.png"></a>
         <a href="#"><img src="/cms/img/icon_youtube.png"></a>
       </div>
     </div>
@@ -198,9 +204,10 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <p class="modal-title opensans">ĐĂNG KÍ THÀNH CÔNG!</p>
-      <p>TechKids sẽ liên lạc với bạn trong thời gian sớm nhất.</p>
-      <p>Cảm ơn bạn đã quan tâm!</p>
+      <p class="modal-title opensans" id="thong_bao"></p>
+            <div class="g-recaptcha" data-sitekey="6LdJZyETAAAAAOvKQaWLFXC5c77Wcmi72F3nrCXI" id="rcaptcha" ></div>
+      <button id="compelete" class="btn" style="margin: 0 auto;">Hoàn thành</button>
+      <p id="thank"></p>
     </div>
 
   </div>
