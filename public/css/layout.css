@@ -28,9 +28,31 @@
 	padding: 0 0 165px 0;
 }
 
+.join_us_2{
+	padding: 0 0 60px 0;
+}
+
 .center_inline_list{
+	margin-top: 0px;
+}
+
+.boder_radius_1{
+	border-radius: 12px;
+}
+
+.center_inline_list_2{
 	margin-top: 200px;
 }
-.boder_radius{
-	boder-radius: 6px;
+
+.set_width_and_align{
+	width: 20%;
+	text-align: center;
+}
+
+.stars_2{
+	background-image: url("../img/background3.jpg")
+}
+
+.font_color{
+	color: white;
 }
