@@ -18,13 +18,22 @@ html{
   font-weight: 400;
 }
 
-body{
+body{ 
   margin: 0;
   padding: 0;
 }
 
 .opensans{
   font-family: "Open Sans", sans-serif;
+}
+
+.roboto{
+  font-family: "Roboto", sans-serif;
+}
+
+h5.roboto{
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 h2.opensans{
@@ -57,7 +66,11 @@ h2.opensans{
 }
 
 .page_block{
-  padding: 110px 70px;
+  padding: 50px 50px;
+}
+
+.page_block h2{
+  margin-top: 0;
 }
 
 .white_bg{
@@ -202,13 +215,14 @@ h2.opensans{
 }
 
 .introduction_block{
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .benefit_block{
   display: flex;
   flex-direction: column;
+
 }
 
 .benefit_block .page_block{
@@ -229,12 +243,12 @@ h2.opensans{
 .benefit_block p{
   margin: 0;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
 }
 
-.benefit_middle_block{
-  margin: 1px 0;
+.scc_table{
+  margin: auto;
 }
 
 .scc_block{
@@ -242,17 +256,29 @@ h2.opensans{
 }
 
 .scc_block h2{
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .scc_tabs{
-  border-radius: 10px;
-  border: 6px solid #3bb4d2;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  
+}
+
+
+
+td p strong{
+  font-size: 1rem;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table, td{
+  border: 2px solid #f47930;
 }
 
 .scc_tabs nav{
@@ -294,7 +320,7 @@ h2.opensans{
 }
 
 .price_tag{
-  font-size: 1.7rem;
+  font-size: 1rem;
   float: right;
 }
 .scc_tabs .tab.active p:after{
@@ -316,17 +342,16 @@ h2.opensans{
 
 .howto_step{
   position: relative;
-  top: -29px;
+  top: -20px;
   text-align: center;
   flex: 1 1 33%;
-  font-size: 1.2rem;
-  padding: 0 10px;
+  font-size: 1rem;
 }
 
 .orange_dot{
   display: inline-block;
-  width: 52px;
-  height: 52px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   border: 6px solid #ffffff;
   background: #f47930;
@@ -349,7 +374,7 @@ h2.opensans{
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -360,6 +385,10 @@ h2.opensans{
   text-align: center;
 }
 
+.lecturer_list a{
+  color: white;
+}
+
 .lecturer_list img{
   max-width: 100%;
   border-radius: 100%;
@@ -367,13 +396,10 @@ h2.opensans{
   margin: 0 auto;
 }
 
-.lecturer_list h5{
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
 .lecturer_list p{
-  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 .partner_block h2{
@@ -473,9 +499,14 @@ h2.opensans{
     margin: 0 1px;
   }
 
+  .table_title{
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
   .scc_tabs{
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .scc_tabs nav{
@@ -497,7 +528,7 @@ h2.opensans{
   }
 
   .howto_steps{
-    margin: 100px 80px 30px;
+    margin: 100px 80px 0px;
   }
 
   .howto_step{
@@ -523,6 +554,16 @@ h2.opensans{
   .footer div{
     padding: 0;
   }
+
+  table, td{
+    border: 2px solid #f47930;
+    }
+
+  .table_title{
+    padding: 20px;
+  }
+
+
 }
 @media screen and (min-width: 1040px){
   html{
@@ -545,6 +586,34 @@ h2.opensans{
     margin-bottom: 0;
     margin-top: -120px;
   }
+
+  .benefit_block{
+      padding-left: 120px;
+      padding-right: 120px;
+  }
+  .benefit_middle_block{
+  border-right: solid 1px #3bb4d2;
+  border-left: solid 1px #3bb4d2;
+}
+
+  .scc_block{
+      padding-left: 120px;
+      padding-right: 120px;
+  }
+
+  .table_content{
+    padding: 50px 200px 50px 50px; 
+  }
+
+  .lecturer_list li{
+    max-width: 20%;
+  }
+
+    table, td{
+    border: 2px solid #f47930;
+    }
+
+
 }
 .modal {
   display: none; /* Hidden by default */
@@ -574,4 +643,9 @@ h2.opensans{
   line-height: 30px;
   color: #3bb4d2;
   font-weight: 600;
+}
+
+.g-recaptcha{
+  margin: 0 auto;
+  width: 304px;
 }
