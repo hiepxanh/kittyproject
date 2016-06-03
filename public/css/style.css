@@ -562,7 +562,9 @@ section.stars .section_title:after{
 }
 .join_us .btn{
 	margin: 40px 10px 0;
-
+	min-width: 60%;
+	padding-left: 20px;
+	padding-right: 20px;
 	float: none;
 }
 
@@ -751,6 +753,11 @@ section.stars .section_title:after{
 	.socials_description{
 		padding-top: 14px;
 		padding-bottom: 14px;
+	}
+
+	.join_us .btn{
+		width: 16em;
+		min-width: 0;
 	}
 }
 
