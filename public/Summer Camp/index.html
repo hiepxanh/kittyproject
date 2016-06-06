@@ -8,6 +8,31 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Open+Sans:700,300,600&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/cms/css/khanh-style.css">
   <script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Hotjar Tracking Code for http://www.techkids.vn/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:218509,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1935350096690516');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1935350096690516&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 <body>
   <header id="register" class="header white_bg invisiblse padding_header">
@@ -59,7 +84,7 @@
       </select>
       
       <div class="form_footer">
-        <span class="only2">Chỉ có 2 lớp duy nhất mùa hè này!</span><button id="button_home" class="btn">Đăng ký ngay</button>
+        <span class="only2">Chỉ có 2 lớp duy nhất mùa hè này!</span><button id="button_home" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Đăng ký Ngay - SCC', 'eventAction': 'Click button', 'eventLabel': 'First Slider'});" class="btn">Đăng ký ngay</button>
       </div>
     </form>
   </section>
@@ -135,7 +160,7 @@
       </div>
     </div>
     <div>
-      <a href="#register" class="btn">Đăng ký ngay</a>
+      <a href="#register" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Đăng ký Ngay - SCC', 'eventAction': 'Click button', 'eventLabel': 'Last Slider'});" class="btn">Đăng ký ngay</a>
     </div>
   </section>
 
