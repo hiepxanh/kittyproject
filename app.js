@@ -274,6 +274,22 @@ router_instructors.get('/cuong-nguyen', function (req, res) {
   res.render('instructors-8');
 });
 
+router_instructors.get('/le-tien-dung', function (req, res) {
+  res.render('instructors-9');
+});
+
+router_instructors.get('/ta-hoang-minh', function (req, res) {
+  res.render('instructors-10');
+});
+
+router_instructors.get('/nguyen-quang-huy', function (req, res) {
+  res.render('instructors-11');
+});
+
+router_instructors.get('/tran-duc-hung', function (req, res) {
+  res.render('instructors-12');
+});
+
 // Đường dẫn tới thư mục pulic, static file cho instructor
 router_instructors.use('/cms/', express.static(__dirname + '/public/'));
 

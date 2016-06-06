@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  section#page_title.page_title.stars
+      .container
+        .row.fade_up.text-center
+          h3.section_title.col-sm-5.col-xs-9 Thông tin giảng viên
+          p.section_subtitle TẠ HOÀNG MINH
+    section
+      .container
+        hr.content_divider
+        article.row
+          .col-sm-4
+            .text-center
+              .profile_thumbnail
+                img(2015='', src='/cms/img/MinhTaHoang.jpg')
+            ul
+              li
+                em Số năm kinh nghiệm: 
+                | 5 năm
+              li
+                em Nơi sống: 
+                | Hà Nội
+          .col-sm-8
+            p Mình là một Fullstack Developer, có kinh nhiệm 5 năm trong lĩnh vực Mobile Development,
+            p
+              |Mình đã trải qua rất nhiều dự án lớn xxx với những khách hàng khó tính nhất đến từ Nhật Bản, Mỹ, EU, Malaysia…
+            p
+              |Lập trình đối với mình từ lâu đã không phải là công việc mà là đam mê để chinh phục những kỹ thuật khó nhất và sáng tạo ra những sản phẩm hoàn hảo nhất. Mục tiêu của mình là trở thành một trong những chuyên gia hàng đầu trong lĩnh vực sản xuất phần mềm.
+            p
+              |Đến với Techkids, mình mong muốn được chia sẻ những kinh nghiệm và kiến thức đã tích luỹ và truyền lửa đam mê cho các bạn trẻ để Việt Nam có thể trở thành cái nôi của những sản phẩm công nghệ sáng tạo và thành công.
+            p
+              |Lời khuyên của mình dành cho các bạn là phải liên tục thử thách bản thân, liên tục tìm tòi đổi mới những phương pháp tối ưu hơn bằng cách trải nghiệm qua nhiều dự án và tang cường kĩ năng tìm kiếm và nghiên cứu tài liệu để thường xuyên trau dồi cập nhật kiến thức
+    section
+      .container.articles_list
+        h3.section_title.col-sm-5.col-xs-9 Các khóa học của MINH TẠ
+        article.row
+          .col-sm-4
+            .news_thumbnail.fade_scale
+              a(href='/khoa-hoc/ios')
+                img(src='/cms/img/ios.jpg')
+          .col-sm-8.fade_left
+            h3.column_title
+              a(href='/khoa-hoc/ios') Khoá học Lập trình iOS
+            div
+              p
+                | Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!
+              p Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.
+              p Tự làm sản phẩm, khởi nghiệp vừa và nhỏ
+            a.see_more_link(href='/khoa-hoc/ios')
+              | Chi tiết 
+              span.fa.fa-chevron-right(aria-hidden='true')
+             
