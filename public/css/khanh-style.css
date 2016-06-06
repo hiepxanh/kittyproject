@@ -32,7 +32,7 @@ body{
 }
 
 h5.roboto{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -398,7 +398,7 @@ table, td{
 
 .lecturer_list p{
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 300;
 }
 
@@ -539,6 +539,11 @@ table, td{
     flex-wrap: nowrap;
   }
 
+  .lecturer_list li{
+    flex: 0 1 auto;
+    width: 200px;
+  }
+
   .partner_list{
     flex-wrap: nowrap;
   }
@@ -556,7 +561,7 @@ table, td{
   }
 
   table, td{
-    border: 2px solid #f47930;
+    border: none;
     }
 
   .table_title{
@@ -572,7 +577,6 @@ table, td{
 
   .register_block{
     flex-direction: row;
-    height: 100vh;
     padding-left: 120px;
 
   }

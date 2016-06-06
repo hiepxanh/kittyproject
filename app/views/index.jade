@@ -5,6 +5,19 @@ append scripts
     m=e.createElement(a);m.async=!0;m.src=t;
     p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
     })(window,document,'script','https://u.heatmap.it/log.js');
+// Facebook Pixel Code
+  script.
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1935350096690516');
+    fbq('track', "PageView");
+  noscript
+    img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=1935350096690516&ev=PageView&noscript=1')
+  // End Facebook Pixel Code
+
 block content
   section#intro.intro.stars_2
       .center_inline_list.center_inline_list_2
@@ -186,8 +199,9 @@ block content
                 
     section#partners.partners
       .container
+        h3.section_title.col-sm-5.col-xs-9 CÁC ĐỐI TÁC TẠI TECHKIDS
         .row.text-center.fade_up
-          hr.content_divider
+          //hr.content_divider
           h3.col-sm-12
             | TechKids tự hào là đối tác chính thức của các tập đoàn hàng đầu Việt Nam và ASEAN
         .row
@@ -210,6 +224,7 @@ block content
             li
               a(href='https://www.fpt.com.vn/')
                 img.fade_scale(src='/cms/img/PartnersLogo/Fpt.png', alt='FPT')
+      //
       hr.content_divider
     section#join_us.join_us.stars.join_us_2
       .container.fade_up

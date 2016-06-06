@@ -38,34 +38,7 @@ html
     nav#main_nav.navbar.navbar-default.navbar-fixed-top.block.nav_optional.endblock(class='{% %}{% %}')
       nav.navbar.navbar-inverse.navbar_secondary.hidden-xs
         .container
-          //form.navbar-form.navbar-right(role='search')
-            //.form-group
-              //- input.form-control(type='text', placeholder='Search')
-              //- input.form-control(type='button',value="Seach")
-          //- div.col-md-3
-          //-   gcse:search
-          //- form(method='get', action='http://www.google.com/search')
-          //-   div(style='border:1px solid black;padding:4px;width:20em;')
-          //-     table(border='0', cellpadding='0')
-          //-       tr
-          //-         td
-          //-           input(type='text', name='q', size='25', maxlength='255', value='')
-          //-           input(type='submit', value='Google Search')
-          //-       tr
-          //-         td(align='center', style='font-size:75%')
-          //-           input(type='checkbox', name='sitesearch', value='askdavetaylor.com', checked='')
-          //-           |  only search Ask Dave Taylor
-          //-           br
-          //- form(action='http://www.google.com/search', method='get')
-          //-   label
-          //-     | Google: 
-          //-     input(type='search', name='q')
-          //-   input(type='submit', value='Search...')
           ul.nav.navbar-nav.navbar-right
-            //- li
-            //-   a(href='#') TIN TỨC
-            //- li
-            //-   a(href='#') TUYỂN DỤNG
             li
               a(href="/") TRANG CHỦ
             li
@@ -99,6 +72,8 @@ html
                 | Khóa học
                 span.visible-xs-inline-block.caret
               ul.dropdown-menu
+                li
+                  a(href="/summer-code-camp") Summer Code Camp
                 li
                   a(href="/khoa-hoc/code-for-kids") Code For Kids 
                 li
