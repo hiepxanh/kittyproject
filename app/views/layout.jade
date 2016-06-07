@@ -35,6 +35,15 @@ html
         ga('create', 'UA-78355215-1', 'auto');
         ga('send', 'pageview');
   body
+    #fb-root
+      script.
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     nav#main_nav.navbar.navbar-default.navbar-fixed-top.block.nav_optional.endblock(class='{% %}{% %}')
       nav.navbar.navbar-inverse.navbar_secondary.hidden-xs
         .container
@@ -127,7 +136,12 @@ html
             p.socials_list
               a.fa.fa-google-plus-square.col-sm-2(href='https://plus.google.com/u/2/')
               a.fa.fa-facebook-square.col-sm-2(href='https://www.facebook.com/Techkids.Code.the.Change')
-              a.fa.fa-youtube.col-sm-2(href='https://www.youtube.com/channel/UCkuxJcFwR-iFgThUPKwM_JA')
+              a.fa.fa-youtube.col-sm-2(href='https://www.youtube.com/channel/UCkuxJcFwR-iFgThUPKwM_JA') <br><br>
+              .fb-page(data-href='https://www.facebook.com/Techkids.Code.the.Change/', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true',data-show-posts='false')
+                .fb-xfbml-parse-ignore
+                  blockquote(cite='https://www.facebook.com/Techkids.Code.the.Change/')
+                    a(href='https://www.facebook.com/Techkids.Code.the.Change/') Techkids - Coding school
+
           .col-sm-3
             h5 Về chúng tôi
             p
