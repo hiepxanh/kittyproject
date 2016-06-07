@@ -35,7 +35,16 @@ html
         ga('create', 'UA-78355215-1', 'auto');
         ga('send', 'pageview');
   body
-      // Facebook Pixel Code
+    #fb-root
+      script.
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        // Facebook Pixel Code
       script.
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -47,15 +56,6 @@ html
       noscript
         img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=1935350096690516&ev=PageView&noscript=1')
       // End Facebook Pixel Code
-    #fb-root
-      script.
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
     nav#main_nav.navbar.navbar-default.navbar-fixed-top.block.nav_optional.endblock(class='{% %}{% %}')
       nav.navbar.navbar-inverse.navbar_secondary.hidden-xs
         .container
