@@ -137,6 +137,9 @@ app.post('/create-post', multipartMiddleware, function(req, res) {
 app.get('/summer-code-camp', function(req,res) {
   res.sendFile(__dirname + '/public/Summer Camp/index.html');
 });
+app.get('/connect', function(req,res) {
+  res.sendFile(__dirname + '/public/Techkids Connect/index.html');
+});
 app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
 });
