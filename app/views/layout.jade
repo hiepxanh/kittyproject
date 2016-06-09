@@ -80,8 +80,17 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.dropdown
+              a.dropdown-toggle(href="/ve-chung-toi", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Về Chúng Tôi
+                span.visible-xs-inline-block.caret
+              ul.dropdown-menu
+                li
+                  a(href="/ve-chung-toi") Giới thiệu  chung
+                li
+                  a(href="/ve-chung-toi#sumenh-tamnhin") Sứ mệnh, tầm nhìn, giá trị cốt lõi
+            li.dropdown
               a.dropdown-toggle(href="/khoa-hoc", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | CÁC KHÓA HỌC
+                | Các Khóa Học
                 span.visible-xs-inline-block.caret
               ul.dropdown-menu
                 li
@@ -94,11 +103,9 @@ html
                   a(href="/khoa-hoc/code-for-everyone") Code For Everyone
                 li
                   a(href="/khoa-hoc/code-for-kids") Code For Kids 
-                li
-                  a(href="/summer-code-camp") Summer Code Camp
             li.dropdown
               a.dropdown-toggle(href='/chuong-trinh/', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | CÁC SỰ KIỆN
+                | Các Sự Kiện
                 span.visible-xs-inline-block.caret
               //- ul.dropdown-menu
               //-   li
@@ -107,18 +114,10 @@ html
               //-     a(href='#') Học bổng cho 1000 lập trình viên tài năng
               //-   li
               //-     a(href='#') Sự kiện TechKids hàng tháng
-            li.dropdown
-              a.dropdown-toggle(href="/ve-chung-toi", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | VỀ CHÚNG TÔI
-                span.visible-xs-inline-block.caret
-              ul.dropdown-menu
-                li
-                  a(href="/ve-chung-toi") Giới thiệu chung
-                li
-                  a(href="/ve-chung-toi#sumenh-tamnhin") Sứ mệnh, tầm nhìn, giá trị cốt lõi
+            
             li.dropdown
               a.dropdown-toggle(href='/summer-code-camp', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | SUMMER CODE CAMP 2016
+                | Summer Code Camp 2016
                 span.visible-xs-inline-block.caret
               //- ul.dropdown-menu
               //-   li

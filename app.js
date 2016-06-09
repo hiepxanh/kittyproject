@@ -137,9 +137,6 @@ app.post('/create-post', multipartMiddleware, function(req, res) {
 app.get('/summer-code-camp', function(req,res) {
   res.sendFile(__dirname + '/public/Summer Camp/index.html');
 });
-app.get('/connect', function(req,res) {
-  res.sendFile(__dirname + '/public/Techkids Connect/index.html');
-});
 app.get('/chia-se/tai-lieu/chia-se-sach-cho-dan-lap-trinh-vien', function (req, res) {
   res.render('articles-1');
 });
@@ -289,8 +286,8 @@ router_instructors.get('/nguyen-quang-huy', function (req, res) {
   res.render('instructors-11');
 });
 
-router_instructors.get('/tran-duc-hung', function (req, res) {
-  res.render('instructors-12');
+router_instructors.get('/nguyen-quang-huy', function (req, res) {
+  res.render('instructors-11');
 });
 
 // Đường dẫn tới thư mục pulic, static file cho instructor
