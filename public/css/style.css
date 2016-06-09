@@ -6,7 +6,7 @@
 	padding-top: 50px;
 }
 a{
-	color: #00A0C6;
+	color: #C60000;
 }
 
 a:hover,
@@ -562,10 +562,10 @@ section.stars .section_title:after{
 }
 .join_us .btn{
 	margin: 40px 10px 0;
-	min-width: 60%;
 	padding-left: 20px;
 	padding-right: 20px;
 	float: none;
+	min-width: 60%;
 }
 
 .news_thumbnail{
