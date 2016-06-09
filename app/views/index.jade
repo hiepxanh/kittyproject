@@ -270,11 +270,38 @@ block content
     section#join_us.join_us.stars.join_us_2
       .container.fade_up
         .row.text-center
-          h3.section_title.col-sm-5.col-xs-9 TRẢI NGHIỆM CÙNG TECHKIDS
-          p.section_subtitle Cùng viết những dòng code thay đổi cuộc đời bạn
+          h3.section_title.col-sm-5.col-xs-9 KẾT NỐI CÙNG TECHKIDS
         .row.text-center
-          a.btn.btn-primary.btn-outline.col-sm-3.col-sm-3.col-xs-9(href='/khoa-hoc') KHÓA HỌC
-          a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/chuong-trinh') CHƯƠNG TRÌNH
+          h1.section_content_title BẠN MUỐN HỎI GÌ TECHKIDS
+        .row.text-center
+          p TechKids sẽ trò chuyện ngay với bạn!
+        .row.text-center
+
+      .container.container-form
+        .form-wrapper
+          form#register-form.form-group
+            .form-info
+              input(type='text', name='name', placeholder='Họ và tên', required='')
+              input(type='text', name='tel', placeholder='Số điện thoại', required='')
+              input(type='email', name='email', placeholder='Email', required='')
+              input(type='text', name='facebook', placeholder='Link Facebook', required='')
+            select(name='job', required='')
+              option(value='-1', disabled='', selected='', hidden='') Bạn là...?
+              option(value='Học sinh') Học sinh
+              option(value='Sinh viên') Sinh viên
+              option(value='Người đi làm') Người đi làm
+              option(value='Lập trình viên') Lập trình viên
+            textarea#position(name='question', placeholder='Câu hỏi của bạn là gì...?', required='')
+            button#submit-button.btn.btn-form(type='submit')
+              span#submit-text ĐĂNG KÝ NGAY
+            h4#notification.notification
+            #form-loader.uil-rolling-css
+              div
+                div
+                div
+
+          //- a.btn.btn-primary.btn-outline.col-sm-3.col-sm-3.col-xs-9(href='/khoa-hoc') KHÓA HỌC
+          //- a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/chuong-trinh') CHƯƠNG TRÌNH
 
   
     //- section#news.newsevent
