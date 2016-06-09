@@ -35,7 +35,7 @@ a:focus{
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus{
-	background-color: #027EE9;
+	background-color: #0080FF;
 }
 
 .btn.btn-outline{
@@ -123,7 +123,7 @@ ol li{
 
 .navbar-fixed-top .collapse .navbar-nav>li>a:hover,
 .navbar-fixed-top .collapse .navbar-nav>li>a:focus{
-	color: #000;
+	color: #02BBE9;
 }
 
 .navbar_secondary {
