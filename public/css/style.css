@@ -700,9 +700,6 @@ section.stars .section_title:after{
 	color: #333;
 }
 
-.form-info select{
-	color: #333;
-}
 
 .form-group textarea{
 	padding: 10px 18px;
@@ -714,6 +711,7 @@ section.stars .section_title:after{
 	padding: 10px 18px;
 	margin-bottom: 25px;
 	width: 100%;
+	color: #333;
 }
 
 .btn-form{
