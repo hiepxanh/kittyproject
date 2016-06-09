@@ -1,9 +1,9 @@
 body{
+	padding-top: 50px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 14px;
 	letter-spacing: 0.5px;
-	padding-top: 50px;
+	font-size: 14px;
 }
 a{
 	color: #337ab7;
@@ -239,12 +239,12 @@ section.page_title{
 }
 
 section.stars {
-	background-clip: border-box;
-	background-attachment: fixed;
-  background-color: #1D232E;
-  background-image: url("../img/Background.jpg");
-	background-size: cover;
 	color: #fff;
+	background-size: cover;
+	background-clip: border-box;
+  background-attachment: fixed;
+	background-color: #1D232E;
+	background-image: url("../img/Background.jpg");
 }
 
 section.intro .container{
@@ -291,9 +291,9 @@ section.intro .container:before{
 .section_title:after {
 	content: "";
 	border-top: 1px solid #F05C1E;
-	display: table-cell;
-	position: relative;
 	transform: translateY(50%);
+	position: relative;
+	display: table-cell;
 	width: 48%;
 }
 
