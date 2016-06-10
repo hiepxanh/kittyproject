@@ -26,7 +26,7 @@ block content
         p.section_subtitle.font_color viết những dòng code thay đổi cuộc đời bạn
         div.join_us
           a.btn.btn-primary.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc') ANDROID/iOS/WEB/C4E
-          a.btn.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/summer-code-camp') SUMMER CODE CAMP
+          a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/summer-code-camp') SUMMER CODE CAMP
           a.btn.btn-success.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/code-for-kids') CODE FOR KIDS
     
     section#courses.courses
@@ -43,8 +43,9 @@ block content
               a(href="/khoa-hoc/code-for-everyone") CODE FOR EVERYONE
             p
             | Đem một thứ ngôn ngữ toàn cầu mới trong tương lai của cả thế giới về Việt Nam: ngôn ngữ Lập trình. Đặc biệt dành cho non-Techs (không học Công nghệ thông tin), trẻ em, phụ nữ.
-            
-
+            //- .row
+            //-   div.join_us
+            //-     a.btn.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/code-for-everyone') TÌM HIỂU NGAY
           .col-sm-3.course_item.fade_scale.fade_delay_1
             div
               span.course_icon
@@ -54,7 +55,9 @@ block content
               a(href="/khoa-hoc/web-fullstack") FULL-STACK WEB
             p
             |Học Lập trình nền tảng và tiếng Anh miễn phí; Front-end, Back-end web bằng NodeJS. Giảng viên 8 - 10 năm kinh nghiệm. Cam kết việc làm sau khóa học. Một lớp học sẽ thay đổi cuộc đời bạn!
-            
+            //- .row
+            //-   div.join_us
+            //-     a.btn.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/web-fullstack') TÌM HIỂU NGAY
           //iOS
           //- .col-sm-3.course_item.fade_scale.fade_delay_2
           //-   div
@@ -75,7 +78,10 @@ block content
               a(href="/summer-code-camp") SUMMER CODE CAMP
             p
               | Học làm dự án iOS/Android từ 10am – 10pm dưới sự hướng dẫn của giảng viên, trợ giảng liên tục trong 1 tháng. Hackathon, Demo Day và Dã ngoại vào các cuối tuần. Bạn sẽ code như chưa từng bao giờ được code!
-              
+            
+            //- .row
+            //-   div.join_us
+            //-     a.btn.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href="/summer-code-camp") TÌM HIỂU NGAY  
           //ANDROID
           //- .col-sm-3.course_item.fade_scale.fade_delay_3
           //-   div
@@ -96,7 +102,25 @@ block content
               a(href="/khoa-hoc/code-for-kids") CODE FOR KIDS
             p
               |“Tất cả trẻ em trên toàn cầu nên học Lập trình” - Barack Obama. C4K được thiết kế để Phát triển tư duy, Làm giàu các kỹ năng, Rèn luyện thái độ sống của các em.
+            //- .row
+            //-   div.join_us
+            //-     a.btn.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/code-for-everyone') TÌM HIỂU NGAY  
+          table(border='0' style='width:108%')
+            tr    
+              td
+                div.join_us_4
+                  a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/code-for-everyone') TÌM HIỂU NGAY      
+              td
+                div.join_us_4
+                  a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/web-fullstack') TÌM HIỂU NGAY  
+          
+              td 
+                div.join_us_4
+                  a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/summer-code-camp') TÌM HIỂU NGAY    
               
+              td 
+                div.join_us_4
+                  a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc/code-for-kids') TÌM HIỂU NGAY         
         .row
           .col-xs-12.text-center
             //a.btn.btn-primary(href="/portfolio") Sản phẩm học viên
@@ -141,12 +165,10 @@ block content
                   p
                     |Chúng tôi tổ chức các hoạt động code nhóm (ăn ngủ tại TechKids) như Hackathon 24h – Demo Day để tăng khả năng làm việc nhóm, độ lỳ và làm việc dưới áp lực cao.<br>
                     |Trong 1 tháng cuối, bạn sẽ được nhận vào TechKids làm dự án thật dưới sự chỉ dẫn của các mentors dày dạn kinh nghiệm 3-7 năm.   
-                  p(style='color:white')
-                    |.
-                  h2 
-                  .join_us_3.text-center
-                    a.btn_1.btn-warning.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc') Tìm hiểu các khóa học              
-              
+                  //- .join_us_3.text-center
+                  //-   a.btn_1.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc') Tìm hiểu các khóa học              
+                  div.join_us_4.text-center
+                    a.btn.btn_button_orange.col-sm-3.boder_radius_1.col-xs-9.set_width_and_align(href='/khoa-hoc') Tìm hiểu các khóa học             
     section#teachers.stars.teachers
       .row.fade_up
         div(id="myCarousel" class="carousel slide" data-ride="carousel")

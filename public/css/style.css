@@ -562,6 +562,11 @@ section.stars .section_title:after{
 .join_us{
 	padding: 0 0 100px 0;
 }
+
+.join_us_4{
+	padding: 0 0 100px 0;
+}
+
 .btn {
     border-radius: 0;
     border: 0 none;
@@ -572,6 +577,14 @@ section.stars .section_title:after{
     box-shadow: none;
 }
 .join_us .btn{
+	margin: 40px 10px 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: none;
+	min-width: 60%;
+}
+
+.join_us_4 .btn{
 	margin: 40px 10px 0;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -838,6 +851,8 @@ section.stars .section_title:after{
 		min-width: 0;
 	}
 }
+
+
 
 @media screen and (min-width: 992px ){
 
