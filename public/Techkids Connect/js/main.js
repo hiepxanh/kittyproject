@@ -27,7 +27,7 @@ $(document).ready(function(){
 	$('.job-list').slick({
 	  dots: true,
 	  arrows: false,
-	  infinite: true,
+	  infinite: false,
 	  speed: 300,
 	  appendDots: ".job-list-dots",
 	  slidesToShow: 2,
@@ -91,4 +91,3 @@ $(document).ready(function(){
 
 
 });
-
