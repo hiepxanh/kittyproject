@@ -40,6 +40,16 @@
 	background-color: #F47930;
 	color: white;
 }
+
+.btn_button_blue{
+	background-color: #008CBA;
+	color: white;
+}
+
+.btn_button_green{
+	background-color: #4CAF50;
+	color: white;
+}
 .btn_1 {
     border-radius: 0;
     border: 0 none;
