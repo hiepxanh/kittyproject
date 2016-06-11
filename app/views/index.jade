@@ -300,28 +300,28 @@ block content
         .row.text-center
           h4 TechKids sẽ trò chuyện ngay với bạn!
         p(style='color:white')
-      .container.container-form
-        .form-wrapper
-          form#register-form.form-group
-            .form-info
-              input(type='text', name='name', placeholder='Họ và tên', required='')
-              input(type='text', name='tel', placeholder='Số điện thoại', required='')
-              input(type='email', name='email', placeholder='Email', required='')
-              input(type='text', name='facebook', placeholder='Link Facebook', required='')
-            select(name='job', required='')
-              option(value='-1', disabled='', selected='', hidden='') Bạn là...?
-              option(value='Học sinh') Học sinh
-              option(value='Sinh viên') Sinh viên
-              option(value='Người đi làm') Người đi làm
-              option(value='Lập trình viên') Lập trình viên
-            textarea#position(name='question', placeholder='Câu hỏi của bạn là gì...?', required='')
-            button#submit-button.btn.btn-form(type='submit')
-                span#submit-text NHẬN TƯ VẤN 
-            h4#notification.notification
-            #form-loader.uil-rolling-css
-              div
-                div
-                div
+        .container.container-form
+                .form-wrapper
+                  form#register-form.form-group
+                    .form-info
+                      input(type='text', name='name', placeholder='Họ và tên', required='')
+                      input(type='text', name='tel', placeholder='Số điện thoại', required='')
+                      input(type='email', name='email', placeholder='Email', required='')
+                      input(type='text', name='facebook', placeholder='Link Facebook', required='')
+                    select(name='job', required='')
+                      option(value='-1', disabled='', selected='', hidden='') Bạn là...?
+                      option(value='Học sinh') Học sinh
+                      option(value='Sinh viên') Sinh viên
+                      option(value='Người đi làm') Người đi làm
+                      option(value='Lập trình viên') Lập trình viên
+                    textarea#position(name='question', placeholder='Câu hỏi của bạn là gì...?', required='')
+                    button#submit-button.btn.btn-form(type='submit')
+                      span#submit-text NHẬN TƯ VẤN 
+                    h4#notification.notification
+                    #form-loader.uil-rolling-css
+                      div
+                        div
+                        div
 
           //- a.btn.btn-primary.btn-outline.col-sm-3.col-sm-3.col-xs-9(href='/khoa-hoc') KHÓA HỌC
           //- a.btn.btn-primary.btn-outline.col-sm-3.col-xs-9(href='/chuong-trinh') CHƯƠNG TRÌNH
