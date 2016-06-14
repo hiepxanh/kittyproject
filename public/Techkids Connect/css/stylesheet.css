@@ -464,6 +464,12 @@ li{
 	margin-top: 30px;
 }
 
+@media(max-width: 320px){
+	.logo{
+		max-width: 75px;
+	}
+}
+
 @media (min-width: 720px){
 
 
