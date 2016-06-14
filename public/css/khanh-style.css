@@ -60,6 +60,11 @@ h2.opensans{
   cursor: pointer;
 }
 
+.btn:hover,
+.btn:active{
+  background-color: #fb8a25;
+}
+
 .btn.btn_big{
   padding: 40px 45px;
   font-size: 1.6rem;
