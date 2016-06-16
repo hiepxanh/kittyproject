@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"o",
+				"opacity"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"f",
+				"flex-start"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"lo",
+				"loop	Attr"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -40,10 +108,6 @@
 				"transform-origin"
 			],
 			[
-				"tr",
-				"transform"
-			],
-			[
 				"a",
 				"active"
 			],
@@ -60,16 +124,8 @@
 				"background"
 			],
 			[
-				"ma",
-				"margin-top"
-			],
-			[
 				"sp",
 				"space-between"
-			],
-			[
-				"c",
-				"color"
 			],
 			[
 				"al",
@@ -78,10 +134,6 @@
 			[
 				"max-",
 				"max-width"
-			],
-			[
-				"bo",
-				"border"
 			],
 			[
 				"P",
@@ -112,20 +164,12 @@
 				"font-size"
 			],
 			[
-				"pa",
-				"padding"
-			],
-			[
 				"u",
 				"uppercase"
 			],
 			[
 				"p",
 				"position"
-			],
-			[
-				"min",
-				"min-height"
 			],
 			[
 				"s",
@@ -136,20 +180,12 @@
 				"padding-left"
 			],
 			[
-				"ba",
-				"background-size"
-			],
-			[
 				"flex-",
 				"flex-direction"
 			],
 			[
 				"margin-",
 				"margin-right"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"he",
@@ -224,16 +260,8 @@
 				"padding-left"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"font-s",
 				"font-size"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"st",
@@ -268,58 +296,42 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/hoangdoan/kittyproject/app/views/index.jade",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 19477,
+				"buffer_size": 4550,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/hoangdoan/kittyproject/app/views/layout.jade",
+			"file": "css/stylesheet.css",
 			"settings":
 			{
-				"buffer_size": 9535,
+				"buffer_size": 3205,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "css/normalize.css",
 			"settings":
 			{
-				"buffer_size": 13216,
+				"buffer_size": 7279,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "khanh-style.css",
+			"file": "/Users/hoangdoan/Desktop/HRC/css/stylesheet.css",
 			"settings":
 			{
-				"buffer_size": 9168,
+				"buffer_size": 7921,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/hoangdoan/kittyproject/public/Summer Camp/index.html",
+			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 10684,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/hoangdoan/kittyproject/public/Techkids Connect/css/stylesheet.css",
-			"settings":
-			{
-				"buffer_size": 7980,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/hoangdoan/kittyproject/public/js/form.js",
-			"settings":
-			{
-				"buffer_size": 808,
+				"buffer_size": 391,
 				"line_ending": "Unix"
 			}
 		}
@@ -361,10 +373,9 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/hoangdoan/kittyproject",
-		"/Users/hoangdoan/kittyproject/public",
-		"/Users/hoangdoan/kittyproject/public/Techkids Connect",
-		"/Users/hoangdoan/kittyproject/public/Techkids Connect/css"
+		"/Users/hoangdoan/Desktop/portfolio",
+		"/Users/hoangdoan/Desktop/portfolio/css",
+		"/Users/hoangdoan/Desktop/portfolio/js"
 	],
 	"file_history":
 	[
@@ -383,7 +394,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -398,6 +409,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"();\n",
+			"active",
+			"order",
+			";\n",
 			"input",
 			"index",
 			"layout.css",
@@ -497,76 +512,75 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/hoangdoan/kittyproject/app/views/index.jade",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19477,
+						"buffer_size": 4550,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2132,
+								1725
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4390.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/hoangdoan/kittyproject/app/views/layout.jade",
+					"file": "css/stylesheet.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9535,
+						"buffer_size": 3205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								978,
+								978
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 58.0,
+						"translation.y": 2802.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "style.css",
-					"semi_transient": false,
+					"file": "css/normalize.css",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 13216,
+						"buffer_size": 7279,
 						"regions":
 						{
 						},
@@ -580,10 +594,11 @@
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10635.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -591,79 +606,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "khanh-style.css",
+					"file": "/Users/hoangdoan/Desktop/HRC/css/stylesheet.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9168,
+						"buffer_size": 7921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 637.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/hoangdoan/kittyproject/public/Summer Camp/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2698,
-								2698
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 780.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/hoangdoan/kittyproject/public/Techkids Connect/css/stylesheet.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7980,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5704,
-								5704
+								1961,
+								1928
 							]
 						],
 						"settings":
@@ -672,27 +627,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6642.0,
+						"translation.y": 2457.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/Users/hoangdoan/kittyproject/public/js/form.js",
+					"buffer": 4,
+					"file": "js/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 808,
+						"buffer_size": 391,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								808,
-								808
+								189,
+								189
 							]
 						],
 						"settings":
@@ -704,7 +659,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -746,10 +701,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "hrc.sublime-project",
+	"project": "showcase.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -767,12 +722,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

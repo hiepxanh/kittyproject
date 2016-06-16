@@ -67,6 +67,10 @@ li{
 	font-weight: 700;
 }
 
+.block-wrapper{
+	min-height: 730px;
+}
+
 .page-block{
 	padding: 0 58px;
 }
@@ -155,9 +159,10 @@ li{
 }
 
 .mobile-frame{
-	text-align: center;
 	/*margin-top: 150px;*/
 	position: relative;
+	text-align: center;
+	margin: 40px auto;
 }
 
 .video-container{
@@ -240,6 +245,7 @@ video{
 
 @media(min-width: 720px){
 
+
 	.header{
 		background: none;
 		padding: 0 50px;
@@ -253,15 +259,17 @@ video{
 		text-align: left;
 	}
 
+	.block-content{
+		max-width: 50%;
+	}
+
 	.mobile-frame{
-		margin-top: 80px;
-		text-align: left;
+		/*margin-top: 150px;*/
+		position: absolute;
+		left: 50%;
+		top: 100px;
+		margin: 0;
 	}
-
-	.video-container{
-		margin: 0 0 0 19px;
-	}
-
 
 	.description-block-mobile{
 		display: none;
