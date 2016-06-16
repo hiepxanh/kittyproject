@@ -181,11 +181,6 @@ video{
 	width: 100%;
 }
 
-.description-block-desktop{
-	margin-bottom: 50px;
-}
-
-
 .tabs-list{
 	display: flex;
 	flex-direction: row;
@@ -265,7 +260,7 @@ video{
 		padding: 0 58px;
 	}
 
-	.page-block.description-block-desktop{
+	.description-block-desktop{
 		margin-bottom: 40px;
 	}
 
