@@ -72,7 +72,7 @@ li{
 }
 
 .page-block{
-	padding: 0 40px;
+	padding: 0 30px;
 }
 
 .img-block{
@@ -212,7 +212,7 @@ video{
 .footer{
 	background: #1e1e2a;
 	color: #fff;
-	padding: 20px 58px;
+	padding: 20px 30px;
   	width: 100%;
  }
 
@@ -284,6 +284,10 @@ video{
 		width: 50%;
 		display: block;
 	}
+
+	.footer{
+		padding: 20px 58px;
+ 	}
 
  }
 
