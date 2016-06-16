@@ -68,7 +68,7 @@ li{
 }
 
 .page-block{
-	padding: 0 58px;
+	padding: 0 40px;
 }
 
 .img-block{
@@ -224,6 +224,11 @@ li{
 		background: none;
 		padding: 0 50px;
 	}
+
+	.page-block{
+		padding: 0 58px;
+	}
+
 	
 	.introduction-content{
 		text-align: left;

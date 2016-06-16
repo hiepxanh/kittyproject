@@ -72,7 +72,7 @@ li{
 }
 
 .page-block{
-	padding: 0 58px;
+	padding: 0 40px;
 }
 
 .img-block{
@@ -250,6 +250,11 @@ video{
 		background: none;
 		padding: 0 50px;
 	}
+
+	.page-block{
+		padding: 0 58px;
+	}
+
 
 	.introduction-block{
 		flex-direction: row;
