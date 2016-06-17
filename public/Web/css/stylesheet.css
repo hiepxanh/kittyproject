@@ -68,7 +68,7 @@ li{
 }
 
 .page-block{
-	padding: 0 58px;
+	padding: 0 30px;
 }
 
 .img-block{
@@ -201,7 +201,7 @@ li{
 .footer{
 	background: #1e1e2a;
 	color: #fff;
-	padding: 20px 58px;
+	padding: 20px 30px;
 }
 
 .footer img{
@@ -224,6 +224,11 @@ li{
 		background: none;
 		padding: 0 50px;
 	}
+
+	.page-block{
+		padding: 0 58px;
+	}
+
 	
 	.introduction-content{
 		text-align: left;
@@ -231,7 +236,11 @@ li{
 
 	.portfolios-item{
 		padding: 100px 60px;
-	}	
+	}
+
+	.footer{
+		padding: 20px 58px;
+ 	}	
 }
 
 @media(min-width: 900px){
