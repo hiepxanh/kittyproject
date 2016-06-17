@@ -229,12 +229,12 @@ app.get('/chia-se/', function (req, res) {
   res.render('articles');
 });
 // create a route to render the portfolio.jade file.
-app.get('/portfolio', function (req, res) {
-  res.render('portfolio');
-});
-app.get('/portfolio/app', function (req, res) {
-  res.render('portfolio_app');
-});
+// app.get('/portfolio', function (req, res) {
+//   res.render('portfolio');
+// });
+// app.get('/portfolio/app', function (req, res) {
+//   res.render('portfolio_app');
+// });
 // we have to create router here
 // CREATE ROUTER
 //==================================
